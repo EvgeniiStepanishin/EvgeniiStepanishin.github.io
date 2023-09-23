@@ -1,0 +1,133 @@
+/* Font connection */
+
+@font-face {
+  font-family: "Bakemono Stereo Trial 700";
+  src: url("../fonts/BAKEMONO-STEREO-BOLD-TRIAL.woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Bakemono Stereo Trial 800";
+  src: url("../fonts/BAKEMONO-STEREO-EXTRABOLD-TRIAL.woff2");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Bakemono Stereo Trial 300";
+  src: url("../fonts/BAKEMONO-STEREO-LIGHT-TRIAL.woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "TT Norms Pro 400";
+  src: url("../fonts/TTNORMSPRO-REGULAR.TTF");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "TT Norms Pro 500";
+  src: url("../fonts/TT\ Norms\ Pro\ Medium.otf");
+}
+
+@font-face {
+  font-family: "TT Norms Pro 700";
+  src: url("../fonts/TT\ Norms\ Pro\ Medium.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "TT Norms Pro 300";
+  src: url("../fonts/TTNORMSPRO-THIN.TTF");
+}
+
+/* Specification/////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+* {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "TT Norms Pro 400";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #d9d9d9;
+  background-color: #170429;
+}
+main {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0px 120px;
+}
+
+.title {
+  font-family: "Bakemono Stereo Trial 800";
+  font-size: 48px;
+  line-height: 159%;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1439px) {
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0px 37px;
+  }
+  .title {
+    font-size: 42px;
+    line-height: 76px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0px 30px;
+  }
+  .title {
+    text-align: center;
+    font-size: 32px;
+    line-height: 76px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 0px 5px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .container {
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 0px 5px;
+  }
+  .title {
+    text-align: center;
+    font-size: 10vw;
+    line-height: 23vw;
+  }
+}

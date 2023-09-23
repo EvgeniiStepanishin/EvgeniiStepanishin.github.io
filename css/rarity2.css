@@ -1,0 +1,1029 @@
+.rarity {
+  position: relative;
+  z-index: 2;
+}
+
+.rarity_bg {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+.rarity_bg img {
+  position: absolute;
+}
+.rarity_bg_gd {
+  top: -20px;
+  -webkit-filter: blur(8px);
+  filter: blur(8px);
+  opacity: 0.3;
+}
+
+.rarity_container {
+  margin-top: 30px;
+  position: relative;
+  z-index: 3;
+}
+
+.rarity_title {
+  font-family: "Bakemono Stereo Trial 800";
+  font-size: 48px;
+  line-height: 82%;
+  text-transform: uppercase;
+  color: #ffc700;
+}
+
+.rarity_title span {
+  font-family: "Bakemono Stereo Trial 300";
+  font-size: 48px;
+  line-height: 82%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.wrapper {
+  background-color: #170429;
+  padding: 100px 0px;
+  position: relative;
+  z-index: 0;
+  display: block !important;
+}
+
+.statisticValue {
+  font-family: "TT Norms Pro 700";
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #000000;
+  position: relative;
+  /* left: -37px; */
+}
+
+.content {
+  width: 86vw;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.rarityTitle {
+  font-family: "TTNORMSandBAKEMONO", Arial, sans-serif;
+  color: #ffc700;
+  font-size: 60px;
+  border-style: solid;
+  font-weight: 100;
+}
+
+.subtitle {
+  font-family: "TTNORMSandBAKEMONO", Arial, sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  margin-top: 70px;
+  width: 55%;
+}
+
+.groupsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: -16px;
+}
+
+.emptyContainer {
+  width: 44%;
+  border: 1px solid #584a65;
+  background-color: #2a183a;
+  height: 220px;
+  border-radius: 26px;
+  padding-top: 70px;
+}
+
+.groupsTokens {
+  width: 44%;
+  min-height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 93px;
+}
+
+.tokens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 44px;
+}
+
+.token {
+  width: 94.88px;
+  height: 121.41px;
+  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  /* border: 1px solid rgba(255, 255, 255, 0.61); */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-top: 5px;
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent 4px,
+      rgba(255, 255, 255, 0.61) 4px,
+      rgba(255, 255, 255, 0.61) 5px,
+      transparent 5px
+    ),
+    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.61)), to(rgba(23, 4, 41, 0.1))),
+    radial-gradient(
+      circle at 0% 100%,
+      transparent 4px,
+      rgba(23, 4, 41, 0.1) 4px,
+      rgba(23, 4, 41, 0.1) 5px,
+      transparent 5px
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))),
+    radial-gradient(
+      circle at 0% 0%,
+      transparent 4px,
+      rgba(23, 4, 41, 0.1) 4px,
+      rgba(23, 4, 41, 0.1) 5px,
+      transparent 5px
+    ),
+    -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(rgba(255, 255, 255, 0.61))),
+    radial-gradient(
+      circle at 100% 0%,
+      transparent 4px,
+      rgba(255, 255, 255, 0.61) 4px,
+      rgba(255, 255, 255, 0.61) 5px,
+      transparent 5px
+    ),
+    -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.61)), to(rgba(255, 255, 255, 0.61)));
+  background-image: -o-radial-gradient(
+      100% 100%,
+      circle,
+      transparent 4px,
+      rgba(255, 255, 255, 0.61) 4px,
+      rgba(255, 255, 255, 0.61) 5px,
+      transparent 5px
+    ),
+    -o-linear-gradient(left, rgba(255, 255, 255, 0.61), rgba(23, 4, 41, 0.1)),
+    -o-radial-gradient(0% 100%, circle, transparent 4px, rgba(23, 4, 41, 0.1)
+          4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px),
+    -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)),
+    -o-radial-gradient(0% 0%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(
+            23,
+            4,
+            41,
+            0.1
+          )
+          5px, transparent 5px),
+    -o-linear-gradient(right, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.61)),
+    -o-radial-gradient(100% 0%, circle, transparent 4px, rgba(
+            255,
+            255,
+            255,
+            0.61
+          )
+          4px, rgba(255, 255, 255, 0.61) 5px, transparent 5px),
+    -o-linear-gradient(bottom, rgba(255, 255, 255, 0.61), rgba(255, 255, 255, 0.61));
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent 4px,
+      rgba(255, 255, 255, 0.61) 4px,
+      rgba(255, 255, 255, 0.61) 5px,
+      transparent 5px
+    ),
+    linear-gradient(to right, rgba(255, 255, 255, 0.61), rgba(23, 4, 41, 0.1)),
+    radial-gradient(
+      circle at 0% 100%,
+      transparent 4px,
+      rgba(23, 4, 41, 0.1) 4px,
+      rgba(23, 4, 41, 0.1) 5px,
+      transparent 5px
+    ),
+    linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)),
+    radial-gradient(
+      circle at 0% 0%,
+      transparent 4px,
+      rgba(23, 4, 41, 0.1) 4px,
+      rgba(23, 4, 41, 0.1) 5px,
+      transparent 5px
+    ),
+    linear-gradient(to left, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.61)),
+    radial-gradient(
+      circle at 100% 0%,
+      transparent 4px,
+      rgba(255, 255, 255, 0.61) 4px,
+      rgba(255, 255, 255, 0.61) 5px,
+      transparent 5px
+    ),
+    linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.61),
+      rgba(255, 255, 255, 0.61)
+    );
+  background-size: 5px 5px, calc(100% - 10px) 1px, 5px 5px,
+    1px calc(100% - 10px);
+  background-position: top left, top center, top right, center right,
+    bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
+}
+
+.groupTitle {
+  font-family: "TT Norms Pro 700";
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.tokenImg {
+  display: block;
+  width: 59.48px;
+  height: 57.49px;
+}
+
+.tokenPercent {
+  font-family: "TT Norms Pro 400";
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  top: 8px;
+  text-align: center;
+}
+
+.tokenName {
+  text-align: center;
+  font-family: "TT Norms Pro 400";
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 10px;
+}
+
+.rarityChecker {
+  height: 260px;
+  background: #ffc700;
+  border-radius: 14px;
+  margin-top: 150px;
+  padding: 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.rarityCheckerTitleContainer,
+.rarityCheckerContentContainer {
+  width: 48%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.rarityCheckerTitleContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 50px;
+  border-right: 2px solid #1d093b;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.rarityCheckerContentContainer {
+  gap: 26px;
+}
+
+.rarityCheckerTitle {
+  font-family: "Bakemono Stereo Trial 800";
+  font-size: 36px;
+  line-height: 90%;
+  text-transform: uppercase;
+  color: #1d093b;
+}
+
+.rarityCheckerSubtitle {
+  font-family: "TT Norms Pro 400";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #1d093b;
+  max-width: 283px;
+  position: relative;
+  left: -27px;
+}
+
+.rarityCheckerTitleHalf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 31px;
+}
+
+.rarityCheckInputContainer {
+  border: 2px solid black;
+  color: black;
+  background-color: #ffc700;
+  padding: 10px !important;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 4px;
+  width: 176px;
+  height: 56.43px;
+  font-family: "TT Norms Pro 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+  color: #1d093b;
+}
+
+.rarityMark,
+.Legendary,
+.Epic,
+.Rare,
+.Uncommon,
+.Common {
+  padding: 6px 15px;
+  background-color: #f9b400;
+  border-radius: 3.01323px;
+  display: inline;
+  margin-left: 10px;
+  color: white;
+  font-family: "TT Norms Pro 500";
+  font-size: 12px;
+  line-height: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.0753307px;
+  text-transform: capitalize;
+  color: #1d093b;
+}
+
+.Common {
+  background: #a4a4a3;
+}
+
+.Uncommon {
+  background: #38d993;
+}
+
+.Rare {
+  background: #34bfff;
+}
+
+.Epic {
+  background: #a327e9;
+}
+
+.Legendary {
+  background: #ff913b;
+}
+
+.rarityCheckerInput {
+  border: none;
+  width: 64%;
+  outline: none;
+  background-color: #ffc700;
+  display: inline;
+  font-family: "TT Norms Pro 700";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 28px;
+  color: #1d093b;
+  position: relative;
+  top: -1px;
+}
+
+.inputPrevalue {
+  display: inline;
+  margin-left: 10px;
+}
+
+.rarityCheckerBtn {
+  color: #ffc700;
+  font-family: "TT Norms Pro 500";
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background: #1d093b;
+  border-radius: 4px;
+  width: 177px;
+  height: 56px;
+}
+
+.rarityCheckerBtn:hover {
+  background: #ff913b;
+  border-radius: 4px;
+  color: #1d093b;
+}
+
+.rarityCheckerImg {
+  width: 183px;
+  height: 185px;
+  border-radius: 14px;
+}
+
+.tokenInfoText {
+  font-family: "TT_NORMS_Pro";
+  padding: 2px 0px;
+  position: relative;
+}
+
+.tokenInfoTextTop {
+  border-bottom: 1px solid black;
+  padding-bottom: 8px;
+}
+.tokenInfoTextTop_left {
+  display: flex;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.tokenInfoTextBottom {
+  margin-top: 10px;
+}
+
+.tokenInfo {
+  height: 74%;
+  width: 66%;
+}
+
+.traitTitle {
+  font-family: "TT Norms Pro 400";
+  font-size: 10px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+.traitValue {
+  border: 1px solid #1d093b;
+  border-radius: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 2px;
+  padding: 1px 11px;
+  color: #1d093b;
+  font-family: "TT Norms Pro 500";
+  font-size: 10px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  position: relative;
+  top: -5px;
+  min-width: 90px;
+}
+
+.tokenInfoText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+.tokenInfoText_title {
+  display: block;
+  font-family: "TT Norms Pro 700";
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.trait {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  min-width: 87px;
+}
+
+.traits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media only screen and (max-width: 1439px) {
+  .rarity_container {
+    margin-top: -122px;
+  }
+  .rarity_title {
+    font-size: 42px;
+  }
+  .rarity_title span {
+    font-size: 42px;
+  }
+  .groupsTokens {
+    width: 100%;
+  }
+  .rarityChecker {
+    height: 200px;
+  }
+  .rarityCheckerTitle {
+    font-size: 28px;
+  }
+  .rarityCheckerSubtitle {
+    font-size: 12px;
+  }
+  .rarityCheckInputContainer {
+    font-size: 27.384px;
+    width: 134px;
+    height: 40px;
+    padding: 3px !important;
+  }
+  .rarityCheckerInput {
+    font-size: 27.384px;
+  }
+  .rarityCheckerBtn {
+    font-size: 18px;
+    width: 134px;
+    height: 40px;
+  }
+  .rarityCheckerImg {
+    width: 129px;
+    height: 131.37px;
+    border-radius: 14px;
+  }
+  .tokenInfoText_title {
+    font-size: 10px;
+  }
+  .statisticValue {
+    font-size: 10px;
+    /* left: -24px; */
+  }
+  .traitTitle {
+    font-size: 8px;
+  }
+  .traitValue {
+    font-size: 8px;
+    min-width: 65.83px;
+    border: 1px solid #1d093b;
+    border-radius: 4px;
+    padding: 0px;
+    height: 18px;
+  }
+  .traits {
+    gap: 0px;
+    min-width: 300px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .tokenInfoText {
+    margin-top: 0px;
+  }
+  .tokenInfo {
+    width: 66%;
+    height: auto;
+  }
+  .rarity_bg {
+    bottom: -93px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .tokens {
+    gap: 24px;
+  }
+  .rarityChecker {
+    height: 280px;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+  }
+  .rarityCheckerTitleHalf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .rarityCheckerTitleHalf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 13px;
+  }
+  .rarityCheckerTitle {
+    font-size: 24px;
+    width: 187px;
+  }
+  .rarityCheckerBtn {
+    font-size: 16px;
+  }
+  .rarityCheckerSubtitle {
+    font-size: 12px;
+    left: 0px;
+    max-width: 213px;
+    line-height: 18px;
+  }
+  .rarityCheckerTitleContainer {
+    gap: 26px;
+    width: 35%;
+    position: relative;
+    left: -40px;
+  }
+  .rarityCheckerImg {
+    width: 165px;
+    height: 168px;
+    border-radius: 14px;
+    position: relative;
+    top: -16px;
+  }
+  .rarityCheckerContentContainer {
+    position: relative;
+    left: -56px;
+    gap: 16px;
+  }
+  .traits {
+    gap: 0px;
+    min-width: 217px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    position: relative;
+    right: -62px;
+    top: -10px;
+  }
+  .tokenInfoText_title_bottom {
+    position: relative;
+    top: 15px;
+  }
+  .tokenInfoText_title {
+    font-size: 9px;
+  }
+  .statisticValue {
+    font-size: 10px;
+    /* left: 5px; */
+    margin-right: auto;
+  }
+  .tokenInfoText {
+    min-width: 220px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .rarity_title {
+    font-size: 34px;
+    text-align: center;
+  }
+  .rarity_title span {
+    font-size: 34px;
+  }
+  .groupTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+  .token {
+    width: 84.59px;
+    height: 108.25px;
+  }
+  .tokens {
+    gap: 14px;
+    margin-top: 30px;
+  }
+  .tokenPercent {
+    font-size: 12.5px;
+  }
+  .tokenName {
+    font-size: 9px;
+  }
+  .rarityChecker {
+    margin-top: 66px;
+    height: 432px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .rarityCheckerTitleContainer {
+    gap: 26px;
+    width: 100%;
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border-right: none;
+    border-bottom: 1px solid #1d093b;
+    padding-bottom: 19px;
+    padding-top: 32px;
+    left: 0;
+  }
+  .rarityCheckInputContainer {
+    width: 158px;
+    height: 38px;
+    padding: 3px !important;
+  }
+  .rarityCheckerSubtitle {
+    max-width: 148px;
+    line-height: 16px;
+  }
+  .rarityCheckerTitle {
+    font-size: 26px;
+    width: 114px;
+  }
+  .rarityCheckerBtn {
+    width: 158px;
+    height: 38px;
+  }
+  .rarityCheckerImg {
+    width: 128px;
+    height: 125.36px;
+    border-radius: 10px;
+  }
+  .rarityCheckerContentContainer {
+    position: relative;
+    left: 0px;
+    gap: 30px;
+    padding: 0 6px;
+    padding-top: 5px;
+  }
+  .tokenInfoText_title {
+    line-height: 16px;
+    max-width: 50px;
+  }
+  .rarityMark,
+  .Legendary,
+  .Epic,
+  .Rare,
+  .Uncommon,
+  .Common {
+    font-size: 10px;
+    line-height: 18px;
+    position: relative;
+    top: 6px;
+  }
+  .statisticValue {
+    top: 12px;
+  }
+  .tokenInfoText {
+    min-width: 179px;
+  }
+  .tokenInfo {
+    position: relative;
+    top: 10px;
+  }
+  .traits {
+    right: 0px;
+    top: 12px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .rarity_title {
+    font-size: 32px;
+    line-height: 30px;
+    max-width: 204px;
+    margin: 0 auto;
+  }
+  .rarity_title_span_span {
+    display: none;
+  }
+  .groupsContainer {
+    margin-top: 0px;
+  }
+  .tokens {
+    gap: 19px;
+  }
+  .groupsTokens {
+    padding-top: 33px;
+  }
+  .rarityChecker {
+    height: 648px;
+  }
+  .rarityCheckerTitleContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 41px;
+  }
+  .rarityCheckerTitle {
+    width: 100%;
+    position: relative;
+    left: 30px;
+  }
+  .rarityCheckerTitleHalf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 13px;
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .rarityCheckerSubtitle {
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    position: relative;
+    left: 16px;
+  }
+  .rarityCheckerContentContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    gap: 0px;
+  }
+  .tokenInfo {
+    width: 100%;
+  }
+  .traits {
+    right: 0px;
+    top: -5px;
+    right: -98px;
+    max-width: 200px;
+  }
+  .rarity_bg {
+    bottom: -135px;
+  }
+  .rarity_bg_gd {
+    top: -9px;
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+    opacity: 0.3;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .tokens {
+    gap: 4.5vw;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .rarity_title {
+    text-align: center;
+    font-size: 10vw;
+    line-height: 2vw;
+    max-width: 60vw;
+  }
+  .rarity_title span {
+    text-align: center;
+    font-size: 10vw;
+  }
+  .groupsTokens {
+    padding-top: 10vw;
+  }
+  .groupTitle {
+    font-size: 6vw;
+  }
+  .tokenPercent {
+    font-size: 3.7vw;
+  }
+  .tokenName {
+    font-size: 2.8vw;
+  }
+  .rarityChecker {
+    margin-top: 20vw;
+    height: 205vw;
+  }
+  .rarityCheckerTitleContainer {
+    padding-top: 13vw;
+  }
+  .rarityCheckerTitle {
+    left: 9vw;
+    font-size: 8vw;
+  }
+  .rarityCheckerSubtitle {
+    left: 5vw;
+    font-size: 3.7vw;
+    line-height: 5vw;
+  }
+  .rarityCheckerTitleHalf {
+    gap: 4vw;
+  }
+  .rarityCheckInputContainer {
+    width: 49vw;
+    height: 13vw;
+    padding: 0.9vw !important;
+  }
+  .rarityCheckerBtn {
+    width: 49vw;
+    height: 12vw;
+    font-size: 5vw;
+  }
+  .rarityCheckerImg {
+    width: 40vw;
+    height: 39vw;
+    border-radius: 3.2vw;
+  }
+  .traits {
+    top: -1.5vw;
+    right: -30vw;
+    max-width: 62vw;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .rarity_container {
+    margin-top: 356px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .rarity_bg {
+    bottom: -112px;
+  }
+}

@@ -1,0 +1,145 @@
+.terms-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: -100%;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  transition: bottom 0.5s ease-in-out;
+  z-index: 100;
+  background-color: #ffc700;
+  gap: 20px;
+  color: #1d093b;
+  font-family: "TT Norms Pro 400";
+  font-weight: 400;
+}
+
+.terms-container label {
+  font-family: "TT Norms Pro 400";
+  font-weight: 400;
+  position: relative;
+  
+}
+
+.terms-container a {
+  color: #1d093b;
+  position: relative;
+  font-weight: bolder;
+  display: inline-block;
+}
+
+.terms-container a::after {
+  display: block;
+  position: absolute;
+  left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+  width: 0; /*задаём длинну линии до наведения курсора*/
+  height: 2px; /*задаём ширину линии*/
+  background-color: #1d093b; /*задаём цвет линии*/
+  content: "";
+  -webkit-transition: width 0.3s ease-out;
+  -o-transition: width 0.3s ease-out;
+  transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.terms-container a:hover::after {
+  width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.terms_btn {
+  display: block;
+  width: 70px;
+  height: 40px;
+  background: #ff913b;
+  border-radius: 4px;
+  letter-spacing: 0.1px;
+  text-transform: capitalize;
+  color: #000000;
+  font-family: "TT Norms Pro 500";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  padding: 3px 5px;
+  bottom: -2px;
+
+  color: #ffc700;
+  font-family: "TT Norms Pro 500";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background: #1d093b;
+  border-radius: 4px;
+  width: 120px;
+  height: 40px;
+}
+
+.terms_btn:hover {
+  background: #ff913b;
+  border-radius: 4px;
+  color: #1d093b;
+}
+
+.terms_btn[disabled] {
+  background-color: gray;
+  color: white;
+  cursor: not-allowed;
+}
+
+@media (max-width: 767px) {
+  .terms-container {
+    height: 75px;
+  }
+}
+
+.terms-container input[type="checkbox"] {
+  display: none;
+}
+
+.terms-container input[type="checkbox"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  border: 1px solid #1d093b;
+  border-radius: 3px;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  top: -2px;
+}
+
+.terms-container input[type="checkbox"]:checked + label:before {
+  background-color: #ffc700;
+}
+
+.terms-container input[type="checkbox"]:checked + label:after {
+  content: "✔";
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  top: 0px;
+  font-size: 16px;
+  color: #1d093b;
+  cursor: pointer;
+}

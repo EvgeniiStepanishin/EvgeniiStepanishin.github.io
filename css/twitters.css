@@ -1,0 +1,65 @@
+.twits {
+  position: relative;
+  z-index: 3;
+  margin-top: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* .twits-container {
+  min-width: 1440px;
+} */
+
+.twits-wrapper {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px;
+  align-items: center;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.twits-wrapper > div {
+  min-width: 550px;
+  max-width: 550px;
+}
+
+@media screen and (min-width: 1450px) {
+  .twits-container {
+    min-width: 1400px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .twits-wrapper > div {
+    min-width: 400px;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .twits {
+    margin-top: 200px;
+  }
+  .twits-wrapper {
+    justify-content: center;
+  }
+
+  .twits-wrapper > div {
+    min-width: 600px;
+    max-width: 600px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .twits-wrapper {
+    justify-content: center;
+  }
+
+  .twits-wrapper > div {
+    min-width: 275px;
+  }
+}

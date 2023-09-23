@@ -1,0 +1,452 @@
+.header {
+    height: 138px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(16.23%, #1E013F), to(rgba(30, 1, 63, 0)));
+    background: -o-linear-gradient(top, #1E013F 16.23%, rgba(30, 1, 63, 0) 100%);
+    background: linear-gradient(180deg, #1E013F 16.23%, rgba(30, 1, 63, 0) 100%);
+    position: fixed;
+    z-index: 11;
+}
+
+.header_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 32px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+}
+
+.header_logo {
+    width: 85.67px;
+    height: 37.95px;
+    z-index: 3;
+}
+
+.header_nav_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 37px;
+    font-family: "TT Norms Pro 700";
+    font-weight: 700;
+    position: relative;
+    left: 18px;
+}
+
+.header_nav_list a {
+    position: relative;
+}
+
+.header_nav_list a::after {
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #FFC700; /*задаём цвет линии*/
+	content: "";
+	-webkit-transition: width 0.3s ease-out;
+	-o-transition: width 0.3s ease-out;
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.header_nav_list a:hover::after {
+    width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.header_social_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 31px;
+    left: 4px;
+    top: 4px;
+}
+
+ .header_social_list_item {
+    position: relative;
+    color: white;
+    font-size: 12px;
+} 
+
+/* .header_social_list_item-twitter::after {
+    content: "en";
+    position: absolute;
+    top: 7px;
+    left: 20px;
+}
+
+.header_social_list_item-me::after {
+    content: "en";
+    position: absolute;
+    top: 7px;
+    left: 32px;
+}
+
+.header_social_list_item-tg::after {
+    content: "ru";
+    position: absolute;
+    top: 7px;
+    left: 28px;
+} */
+
+
+.header_social_list_item svg path {
+    -webkit-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+}
+
+.header_social_list_item svg:hover path {
+    fill: #FFC700 !important;
+}
+
+/* mobile */
+.Header_Hamburger_container {
+    display: none;
+}
+  
+#toggle {
+    display: none;
+}
+
+.Header_nav_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    top: -32px;
+    left: 0;
+    width: 100%;
+    background: -o-linear-gradient(269.88deg, #1C0236 0%, #000000 100%);
+    background: linear-gradient(180.12deg, #1C0236 0%, #000000 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding: 0 40px;
+}
+
+.Header_nav_mobile_wrapper {
+    width: 400px;
+    height: 696px;
+    position: relative;
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    top: 112px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.Header_nav_mobile_List {
+    position: relative;
+    top: 43px;
+    gap: 58px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.Header_nav_mobile_List a {
+    font-family: 'Bakemono Stereo Trial 700';
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 32px;
+    text-align: center;
+    color: #FFC700;
+}
+
+.header_social_list_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    gap: 56px;
+    position: relative;
+    bottom: 30px;
+    border-top: 1px solid #FFF73C;
+    padding: 40px 20px 0px 20px;
+}
+
+.header_social_list_item-twitter {
+    height: 30.24px;
+    width: 37.2px;
+}
+
+.header_social_list_item-me {
+    width: 43px;
+    height: 30px;
+}
+
+.header_social_list_item-tg {
+    width: 40px;
+    height: 33px;
+}
+
+  /* *Hamburger**/
+  
+  .hamburger {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 7px;
+    z-index: 5;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    left: 7px;
+    top: -3px;
+}
+  
+.hamburger div {
+    display: block;
+    height: 2px;
+    background: #FFC700;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.top-bun {
+    width:40px;
+}
+
+.meat {
+    width:40px;
+}
+
+.bottom-bun {
+    width:40px;
+}
+
+/**Animations**/
+
+#toggle:checked + .hamburger .top-bun {
+    width: 39.56px;
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+}
+
+#toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+#toggle:checked + .hamburger .meat {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    margin-top: -9px;
+}
+
+#toggle:checked + .hamburger + .Header_nav_mobile {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);  
+}
+
+
+@media screen and (max-width: 1439px) {
+    .header_nav_list a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .header_logo {
+        width: 75.55px;
+        height: 34.34px;
+    }
+    .header_nav_list {
+        left: -98px;
+        top: -6px;
+    }
+    .header_social_list {
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        left: auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 19px;
+    }
+/*    .header_social_list_item-twitter::after {
+        top: 0px;
+        left: 30px;
+    }
+    
+    .header_social_list_item-me::after {
+        top: -2px;
+        left: 31px;
+    }
+    .header_social_list_item-tg::after {
+        top: -3px;
+        left: 32px;
+    }*/
+} 
+
+@media screen and (max-width: 767px) {
+    .header_container {
+        padding-top: 20px;
+    }
+    .header_nav_list {
+        display: none;
+    }
+    .header_social_list {
+        display: none;
+    }
+    .Header_Hamburger_container {
+        display: block;
+    }
+    .header_logo {
+        width: 100.44px;
+        height: 45.66px;
+    }
+/*    .header_social_list_item-twitter::after {
+        top: 9px;
+        left: 35px;
+    }
+    .header_social_list_item-me::after {
+        top: 9px;
+        left: 53px;
+    }
+    
+    .header_social_list_item-tg::after {
+        top: 9px;
+        left: 46px;
+    } */
+}
+
+@media screen and (max-width: 479px) {
+    .hamburger {
+        left: 0px;
+    }
+    .Header_nav_mobile {
+        padding: 0 5px;
+    }
+    .Header_nav_mobile_wrapper {
+        height: 553px;
+    }
+    .Header_nav_mobile_List {
+        gap: 34px;
+        top: 37px;
+    }
+    .Header_nav_mobile_List a {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .Header_nav_mobile_wrapper {
+        width: 90vw;
+    }
+    .Header_nav_mobile_List a {
+        font-size: 7vw;
+    }
+    .header_social_list_mobile {
+        gap: 17vw;
+        position: relative;
+        bottom: 9vw;
+        border-top: 1px solid #FFF73C;
+        padding: 12vw 6vw 0px 6vw;
+    }
+    .header_social_list_item-twitter {
+        height: 9vw;
+        width: 11.5vw;
+    }
+    .header_social_list_item-me {
+        width: 13vw;
+        height: 9vw;
+    }
+    .header_social_list_item-tg {
+        width: 12.5vw;
+        height: 10vw;
+    }
+/*    .header_social_list_item-twitter::after {
+        top: 2.8vw;
+        left: 11vw;
+    }
+    .header_social_list_item-me::after {
+        top: 2.8vw;
+        left: 16.5vw;
+    }
+    
+    .header_social_list_item-tg::after {
+        top: 2.8vw;
+        left: 14vw;
+    } */
+}
+
+@media screen and (min-width: 2000px) {
+    .header_container {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+}

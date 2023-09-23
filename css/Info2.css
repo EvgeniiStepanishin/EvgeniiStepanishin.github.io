@@ -1,0 +1,716 @@
+.info {
+    min-height: 100vh;
+    background-image: url('../img/info/info_bg.png');
+    background-position: 4%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.info_bg_bottom {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: -35px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    height: 22.2vw;
+}
+.info_bg_bottom img {
+    position: absolute;
+    width: 100%;
+}
+.info_bg_gd {
+    top: -20px;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0.3;
+}
+
+.info_bg_bottom768 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: -35px;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    height: 22.2vw;
+    display: none;
+}
+.info_bg_bottom768 img {
+    position: absolute;
+    width: 100%;
+}
+.info_bg_gd768 {
+    top: -20px;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0.3;
+}
+
+.info_bg_bottom480 {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    bottom: -909px;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    height: 22.2vw;
+    display: none;
+}
+.info_bg_bottom480 img {
+    position: absolute;
+    width: 100%;
+}
+.info_bg_gd480 {
+    top: -20px;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
+    opacity: 0.3;
+}
+
+.info_container {
+    padding-bottom: 50px;
+}
+
+.info_description {
+    position: relative;
+    padding-top: 176px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 22px;
+    z-index: 2;
+}
+
+.info_description_title {
+    font-family: 'Bakemono Stereo Trial 700';
+    font-size: 72.3038px;
+    line-height: 82%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFC700;
+    max-width: 460px;
+}
+.info_description_title_top {
+    font-family: 'Bakemono Stereo Trial 300';
+    color: #FFC700;
+}
+
+.info_description_title_bottom {
+    font-family: 'Bakemono Stereo Trial 700';
+    color: #FFFFFF;
+}
+
+.info_description_text {
+    font-size: 20px;
+    line-height: 130%;
+    max-width: 421px;
+    background: none;
+    padding: 0px;
+    border-radius: 0px;
+    color: white;
+}
+
+.info_description_btn {
+    margin-top: 17px;
+    background: #FFC700;
+    border-radius: 4px;
+    padding: 8.36px 17.7px;
+    font-family: 'TT Norms Pro 500';
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #000000;
+    width: 181px;
+    height: 40px;
+    position: relative;
+    top: 13px;
+}
+
+.info_description_btn:hover {
+    background: #FF913B;;
+}
+
+.info_stats {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 75px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 101px;
+}
+
+.info_stats_soccer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}            
+
+.info_stats_alpha {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+}
+
+.info_stats_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+
+            background: RGBA(23,4,41,0.7);
+    border-radius: 4px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-image: radial-gradient(circle at 100% 100%, transparent 4px, rgba(255, 255, 255, 0.18) 4px, rgba(255, 255, 255, 0.18) 5px, transparent 5px), -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.18)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(rgba(255, 255, 255, 0.18))), radial-gradient(circle at 100% 0%, transparent 4px, rgba(255, 255, 255, 0.18) 4px, rgba(255, 255, 255, 0.18) 5px, transparent 5px), -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.18)), to(rgba(255, 255, 255, 0.18)));
+    background-image: -o-radial-gradient(100% 100%, circle, transparent 4px, rgba(255, 255, 255, 0.18) 4px, rgba(255, 255, 255, 0.18) 5px, transparent 5px), -o-linear-gradient(left, rgba(255, 255, 255, 0.18), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 100%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), -o-radial-gradient(0% 0%, circle, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), -o-linear-gradient(right, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.18)), -o-radial-gradient(100% 0%, circle, transparent 4px, rgba(255, 255, 255, 0.18) 4px, rgba(255, 255, 255, 0.18) 5px, transparent 5px), -o-linear-gradient(bottom, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18));
+    background-image: radial-gradient(circle at 100% 100%, transparent 4px, rgba(255, 255, 255, 0.18) 4px, rgba(255, 255, 255, 0.18) 5px, transparent 5px), linear-gradient(to right, rgba(255, 255, 255, 0.18), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 100%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)), radial-gradient(circle at 0% 0%, transparent 4px, rgba(23, 4, 41, 0.1) 4px, rgba(23, 4, 41, 0.1) 5px, transparent 5px), linear-gradient(to left, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.18)), radial-gradient(circle at 100% 0%, transparent 4px, rgba(255, 255, 255, 0.18) 4px, rgba(255, 255, 255, 0.18) 5px, transparent 5px), linear-gradient(to top, rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18));
+    background-size: 5px 5px, calc(100% - 10px) 1px, 5px 5px, 1px calc(100% - 10px);
+    background-position: top left,top center,top right,center right, bottom right,bottom center,bottom left,center left;
+    background-repeat: no-repeat;
+}
+
+
+
+.info_blueBottomBg {
+    width: 100%;
+    background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+transform: rotate(180deg);
+height: 60vh;
+position: absolute;
+bottom: 0;
+}
+
+.info_stats_list-soccer {
+    padding: 18px 33px;
+    gap: 43px;
+}
+
+.info_stats_list-alpha {
+    padding: 18px 36px;
+    gap: 34px;
+}
+
+.info_stats_title {
+    font-family: 'TT Norms Pro 700';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 175%;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: RGBA(23,4,41,0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.info_stats_title span {
+    font-family:'TT Norms Pro 300'; 
+    color: #ffffff;
+}
+
+.info_stats_list_svg {
+    width: 3px;
+    height: 46px;
+}
+
+.info_stats_list_item-title {
+    text-align: center;
+}
+
+.info_stats_list_item-content {
+    font-family: 'TT Norms Pro 700';
+    font-size: 18px;
+    line-height: 156%;
+    text-align: center;
+}
+
+.info_stats_list_item-btn {
+    display: block;
+    width: 70px;
+    height: 40px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    color: #000000;
+    font-family: 'TT Norms Pro 500';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+}
+
+.info_stats_list_item-btn:hover {
+    background: #FF913B;
+}
+
+/* DECORATION */
+.info_bg {
+    z-index: 0;
+    position: absolute;
+    width: 1193.31px;
+    height: 728.51px;
+    left: -296.69px;
+    top: -62.2px;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.12%, rgba(30, 1, 63, 0.65)), to(rgba(30, 1, 63, 0)));
+    background: -o-linear-gradient(top, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+    background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+    -webkit-transform: rotate(-45.66deg);
+        -ms-transform: rotate(-45.66deg);
+            transform: rotate(-45.66deg);
+}
+.info_bg1 {
+    position: absolute;
+    width: 1388.6px;
+    height: 1047.49px;
+    left: 1204.11px;
+    top: 213px;
+    background: rgba(41, 190, 248, 0.2);
+    mix-blend-mode: normal;
+    -webkit-filter: blur(300px);
+            filter: blur(300px);
+    -webkit-transform: rotate(15deg);
+        -ms-transform: rotate(15deg);
+            transform: rotate(15deg);
+    z-index: 2;
+}
+.info_bg2 {
+    position: absolute;
+    width: 100%;
+    height: 380px;
+    left: 0px;
+    bottom: 0px; 
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(58.12%, rgba(30, 1, 63, 0.65)), to(rgba(30, 1, 63, 0))); 
+    background: -o-linear-gradient(top, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%); 
+    background: linear-gradient(180deg, rgba(30, 1, 63, 0.65) 58.12%, rgba(30, 1, 63, 0) 100%);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
+
+/*  */
+@media screen and (max-width: 1439px) {
+    .info {
+        min-height: 570px;
+        height: 570px;
+    }
+    .info_description {
+        padding-top: 161px;
+        gap: 16px;
+    }
+    .info_description_title {
+        font-size: 62px;
+        line-height: 82%;
+    }
+    .info_description_text {
+        font-size: 18px;
+        line-height: 130%;
+    }
+    .info_description_btn {
+        margin-top: 12px;
+        padding: 7.36px 17px;
+        width: 171px;
+    }
+    .info_stats {
+        margin-top: 189px;
+        gap: 15px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .info_stats_soccer {
+        gap: 14px;
+        position: relative;
+        left: 7px;
+    }  
+    .info_stats_alpha {
+        gap: 14px;
+        position: relative;
+        left: 7px;
+    }
+    .info_stats_list-soccer {
+        padding: 10px 27px;
+        gap: 25px;
+        height: 64px;
+        width: 358px;
+    }
+    .info_stats_list-alpha {
+        padding: 10px 36px;
+        gap: 15px;
+        height: 64px;
+        width: 546px;
+    }
+    .info_stats_title {
+        font-size: 14px;
+        line-height: 200%;
+    }
+    .info_stats_list_svg {
+        width: 3px;
+        height: 35px;
+    }
+    .info_stats_list_item-title {
+        font-size: 14px;
+        line-height: 24px;
+    }  
+    .info_stats_list_item-content {
+        font-size: 14px;
+        line-height: 28px;
+    }
+    .info_stats_list_item-btn {
+        width: 70px;
+        height: 33px;
+        line-height: 150%;
+    }
+    .info_stats_list {
+        background: rgba(255, 255, 255, 0.08);
+    }
+    /* DECORATION */
+    .info_bg {
+        z-index: 2;
+    }
+    .info_bg1 {
+        width: 1107.26px;
+        height: 835.26px;
+        left: 529.18px;
+        top: 425px;
+    }
+    .info_bg2 {
+        display: none;
+    }
+    .info_blueBottomBg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .info {
+        height: 476px;
+        min-height: auto;
+        background-position-x: 51%;
+        background-position-y: -14px;
+    }
+    .info_description {
+        padding-top: 131px;
+        gap: 9px;
+    }
+    .info_description_title {
+        font-size: 50px;
+        line-height: 82%;
+    }
+    .info_description_text {
+        font-size: 16px;
+        line-height: 130%;
+        max-width: 350px;
+    }
+    .info_description_btn {
+        width: 165px;
+    }
+    .info_stats {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-top: 177px;
+        gap: 50px;
+    }
+    .info_stats_soccer {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 8px;
+        left: auto;
+    }
+    .info_stats_alpha {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 9px;
+        left: auto;
+    }
+
+    /* DECORATION */
+    .info_bg {
+        width: 935.61px;
+        height: 571.18px;
+    }
+    .info_bg1 {
+        width: 1047.69px;
+        height: 790.32px;
+        left: 560.55px;
+        top: 187px;
+    }
+    .info_bg_bottom768 {
+        display: block;
+        bottom: -509px;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .info {
+        height: 365px;
+        min-height: auto;
+        background-position-x: 80%;
+        background-position-y: -17px;
+    }
+    .info_description {
+        padding-top: 381px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .info_description_title {
+        text-align: center;
+    }
+    .info_description_text {
+        text-align: center;
+        font-size: 14px;
+        line-height: 130%;
+        position: relative;
+        top: 10px;
+    }
+    .info_description_btn {
+        width: 164px;
+        height: 40px;
+        top: 35px;
+    }
+    .info_stats {
+        margin-top: 240px;
+        gap: 61px;
+    }
+    .info_stats_list {
+        width: 400px;
+    }
+    .info_stats_list-alpha{
+        gap: 0px;
+        padding: 10px 0px;
+        width: 400px;
+    }
+    .info_stats_list_item_last {
+        position: absolute;
+        bottom: -47px;
+    }
+    .info_stats_list_item-btn {
+        width: 96px;
+        height: 32px;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    .info_stats_list_svg_last {
+        display: none;
+    }
+    /* DECORATION */
+    .info_bg {
+        display: none;
+    }
+    .info_bg1 {
+        width: 908.28px;
+        height: 685.16px;
+        left: 121.33px;
+        top: 348px;
+    }
+    .info_bg_bottom {
+        bottom: -2px;
+    }
+    .info_bg_bottom768 {
+        bottom: -464px;
+    }
+    .info_bg_bottom480 {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .info {
+        height: 302px;
+        background-position-x: 71%;
+        background-position-y: 0px;
+    }
+    .info_description_title {
+        font-size: 45px;
+        line-height: 82%;
+    }
+    .info_description_text{
+        font-size: 13.2979px;
+        line-height: 130%;
+    }
+    .info_description_btn {
+        top: 30px;
+        font-size: 15.1976px;
+        line-height: 22px;
+    }
+    .info_stats {
+        margin-top: 180px;
+        gap: 28px;
+    }
+    .info_stats_list {
+        width: 310px;
+    }
+    .info_stats_list_item-title {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .info_stats_list_item-content {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    /* DECORATION */
+    .info_bg1 {
+        width: 908.28px;
+        height: 685.16px;
+        left: 121.33px;
+        top: 348px;
+    }
+    .info_bg_bottom {
+        bottom: -7px;
+    }
+    .info_bg_gd {
+        top: -5px;
+        -webkit-filter: blur(2px);
+                filter: blur(2px);
+        opacity: 0.3;
+    }
+    .info_bg_bottom768 {
+        bottom: -428px;
+    }
+    .info_bg_gd768 {
+        top: -8px;
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
+        opacity: 0.3;
+    }
+    .info_bg_bottom480 {
+        bottom: -856px;
+    }
+    .info_bg_gd480 {
+        top: -7px;
+        -webkit-filter: blur(3px);
+                filter: blur(3px);
+        opacity: 0.3;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .info_description_title {
+        font-size: 12vw;
+    }
+    .info_description_text {
+        font-size: 4vw;
+        line-height: 130%;
+    }
+    .info_description_btn {
+        width: 57vw;
+        height: 12.5vw;
+        top: 10vw;
+        left: 3vw;
+        font-size: 4.5vw;
+        line-height: 6vw;
+    }
+    .info_stats_list {
+        width: 95vw;
+    }
+    .info_stats_title {
+        font-size: 4vw;
+        line-height: 200%;
+    }
+    .info_stats_list_item-title {
+        font-size: 3.7vw;
+        line-height: 6vw;
+    }
+    .info_stats_list_item-content {
+        font-size: 3.7vw;
+        line-height: 6vw;
+    }
+    .info_stats_list_item-btn {
+        width: 34vw;
+        height: 10vw;
+        border-radius: 1.2vw;
+        font-size: 5vw;
+    }
+    .info_stats_list-soccer {
+        gap: 5vw;
+        height: 22vw;
+    }
+    .info_stats_list-alpha {
+        height: 22vw;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .info_stats_list {
+        background: rgba(255, 255, 255, 0.20);
+    }
+    .info_stats_title {
+        background: none;
+    }
+    .info_description_text {
+
+        color: #D9D9D9; 
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .info_container {
+        padding-top: 100px;
+    }
+    .info_description {
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+    .info_stats {
+        margin-top: 200px;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+}

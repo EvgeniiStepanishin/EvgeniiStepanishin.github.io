@@ -1,0 +1,302 @@
+.marketplaces {
+  position: relative;
+  z-index: 2;
+}
+
+.marketplaces_container {
+  margin-top: 469px;
+}
+
+.marketplaces_list_container {
+  margin-top: 60px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 42px 76px;
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent 16px,
+      rgba(255, 255, 255, 0.7) 16px,
+      rgba(255, 255, 255, 0.7) 17px,
+      transparent 17px
+    ),
+    -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.7)), to(rgba(23, 4, 41, 0.1))),
+    radial-gradient(
+      circle at 0% 100%,
+      transparent 16px,
+      rgba(23, 4, 41, 0.1) 16px,
+      rgba(23, 4, 41, 0.1) 17px,
+      transparent 17px
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(rgba(23, 4, 41, 0.1)), to(rgba(23, 4, 41, 0.1))),
+    radial-gradient(
+      circle at 0% 0%,
+      transparent 16px,
+      rgba(23, 4, 41, 0.1) 16px,
+      rgba(23, 4, 41, 0.1) 17px,
+      transparent 17px
+    ),
+    -webkit-gradient(linear, right top, left top, from(rgba(23, 4, 41, 0.1)), to(rgba(255, 255, 255, 0.7))),
+    radial-gradient(
+      circle at 100% 0%,
+      transparent 16px,
+      rgba(255, 255, 255, 0.7) 16px,
+      rgba(255, 255, 255, 0.7) 17px,
+      transparent 17px
+    ),
+    -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7)));
+  background-image: -o-radial-gradient(
+      100% 100%,
+      circle,
+      transparent 16px,
+      rgba(255, 255, 255, 0.7) 16px,
+      rgba(255, 255, 255, 0.7) 17px,
+      transparent 17px
+    ),
+    -o-linear-gradient(left, rgba(255, 255, 255, 0.7), rgba(23, 4, 41, 0.1)),
+    -o-radial-gradient(0% 100%, circle, transparent 16px, rgba(23, 4, 41, 0.1)
+          16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px),
+    -o-linear-gradient(top, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)),
+    -o-radial-gradient(0% 0%, circle, transparent 16px, rgba(23, 4, 41, 0.1)
+          16px, rgba(23, 4, 41, 0.1) 17px, transparent 17px),
+    -o-linear-gradient(right, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.7)),
+    -o-radial-gradient(100% 0%, circle, transparent 16px, rgba(
+            255,
+            255,
+            255,
+            0.7
+          )
+          16px, rgba(255, 255, 255, 0.7) 17px, transparent 17px),
+    -o-linear-gradient(bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-image: radial-gradient(
+      circle at 100% 100%,
+      transparent 16px,
+      rgba(255, 255, 255, 0.7) 16px,
+      rgba(255, 255, 255, 0.7) 17px,
+      transparent 17px
+    ),
+    linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(23, 4, 41, 0.1)),
+    radial-gradient(
+      circle at 0% 100%,
+      transparent 16px,
+      rgba(23, 4, 41, 0.1) 16px,
+      rgba(23, 4, 41, 0.1) 17px,
+      transparent 17px
+    ),
+    linear-gradient(to bottom, rgba(23, 4, 41, 0.1), rgba(23, 4, 41, 0.1)),
+    radial-gradient(
+      circle at 0% 0%,
+      transparent 16px,
+      rgba(23, 4, 41, 0.1) 16px,
+      rgba(23, 4, 41, 0.1) 17px,
+      transparent 17px
+    ),
+    linear-gradient(to left, rgba(23, 4, 41, 0.1), rgba(255, 255, 255, 0.7)),
+    radial-gradient(
+      circle at 100% 0%,
+      transparent 16px,
+      rgba(255, 255, 255, 0.7) 16px,
+      rgba(255, 255, 255, 0.7) 17px,
+      transparent 17px
+    ),
+    linear-gradient(to top, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7));
+  background-size: 17px 17px, calc(100% - 34px) 1px, 17px 17px,
+    1px calc(100% - 34px);
+  background-position: top left, top center, top right, center right,
+    bottom right, bottom center, bottom left, center left;
+  background-repeat: no-repeat;
+}
+
+.marketplaces_line {
+  width: 3px;
+  height: 46px;
+}
+
+@media screen and (max-width: 1439px) {
+  .marketplaces_container {
+    margin-top: 362px;
+  }
+  .marketplaces_list_container {
+    margin-top: 50px;
+    padding: 40px 62px 30px 57px;
+  }
+  .marketplaces_img_me {
+    width: 187.7px;
+    height: 40.67px;
+  }
+  .marketplaces_img_coral {
+    width: 275.55px;
+    height: 121.27px;
+  }
+  .marketplaces_img_opensea {
+    width: 182.12px;
+    height: 49.17px;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .marketplaces_container {
+    margin-top: 220px;
+  }
+  .marketplaces_list_container {
+    margin-top: 76px;
+    padding: 44px 70px 29px 60px;
+  }
+  .marketplaces_img_me {
+    width: 133.12px;
+    height: 28.84px;
+  }
+  .marketplaces_img_coral {
+    width: 168.64px;
+    height: 86.01px;
+  }
+  .marketplaces_img_opensea {
+    width: 129.17px;
+    height: 34.87px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .marketplaces_container {
+    margin-top: 220px;
+  }
+  .marketplaces_list_container {
+    margin-top: 23px;
+    padding: 26px 68px 25px 63px;
+    height: 160px;
+  }
+  .marketplaces_line {
+    display: none;
+  }
+  .marketplaces_link_me {
+    position: relative;
+    top: -34px;
+    border-bottom: 1px solid #fff73c;
+    padding-bottom: 27px;
+  }
+  .marketplaces_img_me {
+    width: 138.12px;
+    height: 30.84px;
+  }
+  .marketplaces_link_coral {
+    position: relative;
+    left: 35px;
+    top: -5px;
+    border-left: 1px solid #fff73c;
+    padding-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .marketplaces_img_coral {
+    width: 122.64px;
+    height: 86.01px;
+  }
+  .marketplaces_link_opensea {
+    position: relative;
+    left: -273px;
+    top: 32px;
+  }
+  .marketplaces_img_opensea {
+    width: 129.17px;
+    height: 34.87px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .marketplaces_container {
+    margin-top: 141px;
+  }
+  .marketplaces_list_container {
+    margin-top: 23px;
+    padding: 21px 37px 23px 34px;
+    height: 144px;
+  }
+  .marketplaces_link_me {
+    position: relative;
+    top: -26px;
+    border-bottom: 1px solid #fff73c;
+    padding-bottom: 20px;
+  }
+  .marketplaces_img_me {
+    width: 121px;
+    height: 26px;
+  }
+  .marketplaces_link_coral {
+    position: relative;
+    left: 25px;
+    top: -1px;
+    border-left: 1px solid #fff73c;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .marketplaces_img_coral {
+    width: 116.64px;
+    height: 86.01px;
+  }
+  .marketplaces_link_opensea {
+    position: relative;
+    left: -235px;
+    top: 32px;
+  }
+  .marketplaces_img_opensea {
+    width: 114px;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .marketplaces_list_container {
+    height: 45vw;
+  }
+  .marketplaces_link_me {
+    position: relative;
+    top: -8vw;
+    border-bottom: 1px solid #fff73c;
+    padding-bottom: 6vw;
+  }
+  .marketplaces_img_me {
+    width: 37vw;
+    height: 8vw;
+  }
+  .marketplaces_link_coral {
+    position: relative;
+    left: 5vw;
+    top: -1px;
+    border-left: 1px solid #fff73c;
+    padding-left: 8vw;
+    padding-top: 3.2vw;
+    padding-bottom: 3.2vw;
+  }
+  .marketplaces_img_coral {
+    width: 33vw;
+    height: 26vw;
+  }
+  .marketplaces_link_opensea {
+    position: relative;
+    left: -78vw;
+    top: 10vw;
+  }
+  .marketplaces_img_opensea {
+    width: 35vw;
+    height: 10vw;
+  }
+}
+
+/* @media screen and (min-width: 2000px) {
+    .marketplaces_container {
+        margin-top: 550px;
+        -webkit-transform: scale(1.2);
+            -ms-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+} */

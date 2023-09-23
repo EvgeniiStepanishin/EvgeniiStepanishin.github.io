@@ -1,0 +1,72 @@
+@media screen and (min-width: 2000px) {
+  .collections_container {
+    margin-top: 230px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .collection_bg {
+    bottom: -262px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .footer_container {
+    margin-top: 550px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .header_container {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@media screen and (min-width: 2000px) {
+  .info_container {
+    padding-top: 100px;
+  }
+  .info_description {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .info_stats {
+    margin-top: 200px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+/* @media screen and (min-width: 2000px) {
+  .marketplaces_container {
+    margin-top: 550px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+} */
+@media screen and (min-width: 2000px) {
+  .rarity_container {
+    margin-top: 356px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .rarity_bg {
+    bottom: -112px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .roadmap_container {
+    margin-top: 850px;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .roadmap_bg {
+    bottom: -781px;
+  }
+}
