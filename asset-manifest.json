@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.723820c0.css",
+    "main.js": "/static/js/main.5bb5c300.js",
+    "static/media/BG9.png": "/static/media/BG9.b14da043921d6c82a550.png",
+    "static/media/coins.png": "/static/media/coins.2159c8f697a4a6b7b380.png",
+    "static/media/BG8.png": "/static/media/BG8.12dc834a3236a1cec051.png",
+    "static/media/Benzin-Bold.ttf": "/static/media/Benzin-Bold.f4826ddcf24e7e1ed982.ttf",
+    "static/media/BG7.png": "/static/media/BG7.43a2390e1fc90dbd4c25.png",
+    "static/media/BGMobile7.png": "/static/media/BGMobile7.24069a1024c6dbf1f732.png",
+    "static/media/BGMobile8.png": "/static/media/BGMobile8.f346d21c281246f88e9c.png",
+    "static/media/protectIcon.svg": "/static/media/protectIcon.99550b568405a921e53fc30598159a16.svg",
+    "static/media/PercentageList.svg": "/static/media/PercentageList.aebc43d90f944f597836cc2aac82a14b.svg",
+    "static/media/joji.png": "/static/media/joji.fa193d676507fc152c00.png",
+    "static/media/sugar.png": "/static/media/sugar.35b4f380b11f2a150f48.png",
+    "static/media/iced.png": "/static/media/iced.1fdd4cccea30eea3120e.png",
+    "static/media/BGMobile6.png": "/static/media/BGMobile6.c363c1d65e5229e6aa16.png",
+    "static/media/solgoodman.png": "/static/media/solgoodman.2b40e43f8ff4edfdd856.png",
+    "static/media/sorryover.png": "/static/media/sorryover.5f5efbd464080ce7f28e.png",
+    "static/media/bee.png": "/static/media/bee.2e65e7bac29a84dc2918.png",
+    "static/media/affu.png": "/static/media/affu.46b81065f3be441f0387.png",
+    "static/media/twitterSmallIcom.svg": "/static/media/twitterSmallIcom.9554f142357f9b7edc2dd81147e83c09.svg",
+    "static/media/twitterBigIcon.svg": "/static/media/twitterBigIcon.580e8707f8eda4634cbf08bfa04ef5d7.svg",
+    "index.html": "/index.html",
+    "static/media/tgSmallIcon.svg": "/static/media/tgSmallIcon.cb4110348ccae437ee20f468580ef319.svg",
+    "static/media/tgBigIcon.svg": "/static/media/tgBigIcon.97d6fd288397f9bd7b950176e857be12.svg",
+    "static/media/arrowRight.svg": "/static/media/arrowRight.3b488c061416b69700015bb447e68634.svg",
+    "main.723820c0.css.map": "/static/css/main.723820c0.css.map",
+    "main.5bb5c300.js.map": "/static/js/main.5bb5c300.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.723820c0.css",
+    "static/js/main.5bb5c300.js"
+  ]
+}
