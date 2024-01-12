@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Lazy Soccer: Web3 football manager with digital assets integration</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lazy Soccer (play and earn NFT football game)</title>
-    <meta name="description" content="Lazy Soccer is a think2earn strategic soccer manager with the most carefully developed economic model. You have to hold the Lazy Soccer Staff NFT to play the game.">
+    <meta name="description" content="Lazy Soccer is a Web3 multidevice free-to-play soccer management simulator with NFT integration.">
     <!-- Reset all basic styles -->
     <link rel="stylesheet" href="css/reset2.css">
     <!-- Add main styles file -->
-    <link rel="stylesheet" href="css/index2.css?ver=7">
-    <link rel="stylesheet" href="css/Header2.css?ver=7">
-    <link rel="stylesheet" href="css/Info2.css?ver=7">
-    <link rel="stylesheet" href="css/collections2.css?ver=7">
-    <link rel="stylesheet" href="css/rarity2.css?ver=7">
-    <link rel="stylesheet" href="css/roadmap2.css?ver=7">
-    <link rel="stylesheet" href="css/marketplaces3.css?ver=7">
-    <link rel="stylesheet" href="css/TermsAndConditions3.css?ver=7">
-    <link rel="stylesheet" href="css/footer2.css?ver=7">
-    <link rel="stylesheet" href="css/form.css?ver=7">
-    <link rel="stylesheet" href="css/twitters.css?ver=7">
-    <link rel="stylesheet" href="css/video.css?ver=7">
+    <link rel="stylesheet" href="css/index2.css?ver=9">
+    <link rel="stylesheet" href="css/Header2.css?ver=9">
+    <link rel="stylesheet" href="css/Info2.css?ver=9">
+    <link rel="stylesheet" href="css/collections2.css?ver=9">
+    <link rel="stylesheet" href="css/rarity2.css?ver=9">
+    <link rel="stylesheet" href="css/roadmap2.css?ver=9">
+    <link rel="stylesheet" href="css/marketplaces3.css?ver=9">
+    <link rel="stylesheet" href="css/TermsAndConditions3.css?ver=9">
+    <link rel="stylesheet" href="css/footer2.css?ver=9">
+    <link rel="stylesheet" href="css/form.css?ver=9">
+    <link rel="stylesheet" href="css/twitters.css?ver=9">
+    <link rel="stylesheet" href="css/video.css?ver=9">
     <!-- Add Favicon -->
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/bigScreen3.css?ver=7">
+    <link rel="stylesheet" href="css/bigScreen3.css?ver=9">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
@@ -34,7 +34,7 @@
             <a style="z-index: 3;" href="#Lazy_Soccer"><img class="header_logo" src="./img/header_logo.svg" alt="Logo"></a>
             <nav>
                 <ul class="header_nav_list">
-                    <a href="#Collections"><li>NFT  collections</li></a>
+                    <a href="#Collections"><li>Collections</li></a>
                     <a href="#Rarity"><li>Rarity</li></a>
                     <a href="#RoadMap"><li>Roadmap</li></a>
                     <a href="https://lazy-soccer.gitbook.io/whitepaper/"  target="_blank" rel="noreferrer"><li>Whitepaper</li></a> 
@@ -65,7 +65,7 @@
               <div  class='Header_nav_mobile'>                        
                 <div class='Header_nav_mobile_wrapper'>
                       <ul class='Header_nav_mobile_List' >
-                        <a href="#Collections" onclick=deleteBurgerMenu()><li>NFT  collections</li></a>
+                        <a href="#Collections" onclick=deleteBurgerMenu()><li>Collections</li></a>
                         <a href="#Rarity" onclick=deleteBurgerMenu()><li>Rarity</li></a>
                         <a href="#RoadMap" onclick=deleteBurgerMenu()><li>Roadmap</li></a>
                         <a href="#Marketplaces" onclick=deleteBurgerMenu()><li>MARKETPLACES</li></a>
@@ -110,8 +110,8 @@
             </div>
             <div class="container info_container" >
                 <div class="info_description">
-                    <h1 class="info_description_title">Think<span class="info_description_title_top">&</span>Earn <span class="info_description_title_bottom">NFT Game</span></h1>
-                    <p class="info_description_text">Lazy Soccer is a multi-platform soccer management simulator developed with NFT integration.</p>
+                    <h1 class="info_description_title">Think<span class="info_description_title_top">&</span>Win <span class="info_description_title_bottom">Web3 <span style="position:relative; left: -5px;">Game</span></span></h1>
+                    <p class="info_description_text">Lazy Soccer is a multi-platform soccer management simulator developed with Web3 digital assets integration.</p>
                     <a href="https://lazy-soccer.gitbook.io/whitepaper/"  target="_blank" rel="noreferrer" class="info_description_btn">Read Whitepaper</a>
                 </div>
                 <div class="info_stats" >
@@ -233,12 +233,12 @@
           <div class="container rarity_container" >
             <h2 class="title roadmap_title" >trailer</h2>
             <div class="video__iframe_wrap">
-              <iframe 
+              <iframe
               class="video__iframe"
-              src="https://www.youtube.com/embed/Dlkp_of0KVg?si=213o-OJ1qKcovMJN" 
-              title="YouTube video player" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              src="https://www.youtube.com/embed/7Vx3jwPpcl0?si=Dxi-XyRbSghhGQmc"
+              title="Lazy Soccer trailer"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen>
             </iframe>
             <div style="position: relative;">
@@ -635,19 +635,24 @@
             let floor = 0
             let floorContainer = document.getElementById('floor_container')
             const options = {
-                    headers: {
-                      method: 'GET',
-                      redirect: 'follow',
-                        }
+                      headers: {
+                        method: 'GET',
+                        redirect: 'follow',
+                      },
+                      // mode: 'no-cors'
                     }
 
-            await fetch('https://api.allorigins.win/get?url=https://api-mainnet.magiceden.dev/v2/collections/9h4HgBMX7cZ7sm6uBNtRmnkMYpEFtZfWS5h74HAEFsuD/stats')
+            await fetch('https://api.allorigins.win/raw?url=https://api-mainnet.magiceden.dev/v2/collections/9h4HgBMX7cZ7sm6uBNtRmnkMYpEFtZfWS5h74HAEFsuD/stats')
+            // await fetch('https://api.tensor.so/sol/collections/lazy_alpha/floor')
+            // await fetch('https://api.allorigins.win/raw?url=https://api.tensor.so/sol/collections')
             .then((response) => {
                 const result = response.json();
+                
                 return result
             })
             .then((data) => {
-              floor = parseFloat((JSON.parse(data.contents).floorPrice / 1000000000).toFixed(2))
+              floor =  parseFloat((data.floorPrice / 1000000000).toFixed(2))
+              // floor = parseFloat((JSON.parse(data).floorPrice / 1000000000).toFixed(2))
             })
             floorContainer.innerHTML = `${floor} ` + 'SOL'
           }
@@ -657,7 +662,7 @@
             getMagicEdenPrice()
           };
     </script>
-    <script type="module" src="./js/index3.js?ver=7" defer></script>
+    <script type="module" src="./js/index3.js?ver=9" defer></script>
     <!-- js code -->
 
 </body>
