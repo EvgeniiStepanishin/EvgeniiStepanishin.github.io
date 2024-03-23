@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
+  margin-top: 100px;
 }
 
 .gameDescription__item_container {
@@ -43,6 +44,7 @@
 
 .gameDescription__descr_list {
   padding-left: 20px;
+  margin-top: 60px;
 }
 
 .gameDescription__descr_p {
@@ -96,8 +98,12 @@
   .gameDescription__item_container {
     display: none;
   }
+  .gameDescription__list_container {
+    display: none;
+  }
   .gameDescription__item_container2 {
     display: flex;
+    margin-top: 50px;
   }
   .gameDescription {
     margin-top: 500px;
@@ -108,11 +114,18 @@
   .gameDescription {
     margin-top: 1000px;
   }
+  .gameDescription__item_container2 {
+    display: flex;
+    margin-top: 0px;
+  }
 }
 
 @media screen and (max-width: 479px) {
   .gameDescription {
     margin-top: 900px;
+  }
+  .collections_title {
+    line-height: 34px !important;
   }
 }
 

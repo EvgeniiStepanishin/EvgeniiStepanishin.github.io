@@ -1,17 +1,28 @@
 // ////////////////////////////////////////////////////////////////////////////////////////
 // js code for burger menu to add style overflow hidden to body
 let burger = document.querySelectorAll(".hamburger");
-const toggleOverflow = () => {
-  // let myBody = document.getElementsByTagName('body')[0]
-  // myBody.classList.toggle('ovh')
-};
+// const toggleOverflow = () => {
+//   // let myBody = document.getElementsByTagName('body')[0]
+//   // myBody.classList.toggle('ovh')
+// };
 // ////////////////////////////////////////////////////////////
 // Closing of Hamburger
-const deleteBurgerMenu = () => {
-  // let myBody = document.getElementsByTagName('body')[0]
-  toggle.checked = false;
-  // myBody.classList.remove('ovh')
-};
+// const deleteBurgerMenu = () => {
+//   // let myBody = document.getElementsByTagName('body')[0]
+//   toggle.checked = false;
+//   // myBody.classList.remove('ovh')
+// };
+// function deleteBurgerMenu() {
+//   console.log("deleteBurgerMenu");
+//   // Получаем чекбокс по его id
+//   var checkbox = document.getElementById("toggle");
+//   // Проверяем, активен ли чекбокс
+//   if (checkbox.checked) {
+//       // Если да, меняем его состояние на неактивное
+//       checkbox.checked = false;
+//   }
+// }
+
 
 ///////   Terms and Conditions section
 const checkbox = document.getElementById("terms-checkbox");

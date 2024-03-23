@@ -21,6 +21,10 @@
 }
 
 @media screen and (min-width: 2000px) {
+
+  .video_container {
+    margin-top: 200px !important;
+  }
   .video_bg {
     bottom: -351px !important;
   }

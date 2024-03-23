@@ -76,7 +76,8 @@
             justify-content: space-between;
     gap: 31px;
     left: 4px;
-    top: 4px;
+    top: 8px;
+    position: relative;
 }
 
  .header_social_list_item {

@@ -9,22 +9,22 @@
     <!-- Reset all basic styles -->
     <link rel="stylesheet" href="css/reset2.css">
     <!-- Add main styles file -->
-    <link rel="stylesheet" href="css/index2.css?ver=11">
-    <link rel="stylesheet" href="css/Header2.css?ver=11">
-    <link rel="stylesheet" href="css/Info2.css?ver=11">
-    <link rel="stylesheet" href="css/collections2.css?ver=11">
-    <link rel="stylesheet" href="css/rarity2.css?ver=11">
-    <link rel="stylesheet" href="css/roadmap2.css?ver=11">
-    <link rel="stylesheet" href="css/marketplaces3.css?ver=11">
-    <link rel="stylesheet" href="css/TermsAndConditions3.css?ver=11">
-    <link rel="stylesheet" href="css/footer2.css?ver=11">
-    <link rel="stylesheet" href="css/form.css?ver=11">
-    <link rel="stylesheet" href="css/twitters.css?ver=11">
-    <link rel="stylesheet" href="css/video.css?ver=11">
-    <link rel="stylesheet" href="css/gameDescription.css?ver=11">
+    <link rel="stylesheet" href="css/index2.css?ver=12">
+    <link rel="stylesheet" href="css/Header2.css?ver=12">
+    <link rel="stylesheet" href="css/Info2.css?ver=12">
+    <link rel="stylesheet" href="css/collections2.css?ver=12">
+    <link rel="stylesheet" href="css/rarity2.css?ver=12">
+    <link rel="stylesheet" href="css/roadmap2.css?ver=12">
+    <link rel="stylesheet" href="css/marketplaces3.css?ver=12">
+    <link rel="stylesheet" href="css/TermsAndConditions3.css?ver=12">
+    <link rel="stylesheet" href="css/footer2.css?ver=12">
+    <link rel="stylesheet" href="css/form.css?ver=12">
+    <link rel="stylesheet" href="css/twitters.css?ver=12">
+    <link rel="stylesheet" href="css/video.css?ver=12">
+    <link rel="stylesheet" href="css/gameDescription.css?ver=12">
     <!-- Add Favicon -->
     <link rel="shortcut icon" href="./img/favicon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="css/bigScreen3.css?ver=11">
+    <link rel="stylesheet" href="css/bigScreen3.css?ver=12">
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </head>
 <body>
@@ -35,6 +35,8 @@
             <a style="z-index: 3;" href="#Lazy_Soccer"><img class="header_logo" src="./img/header_logo.svg" alt="Logo"></a>
             <nav>
                 <ul class="header_nav_list">
+                    <a href="#About"><li>About</li></a>
+                    <a href="#Trailer"><li>Trailer</li></a>
                     <a href="#Collections"><li>Collections</li></a>
                     <a href="#Rarity"><li>Rarity</li></a>
                     <a href="#RoadMap"><li>Roadmap</li></a>
@@ -62,7 +64,7 @@
             <!-- mobile -->
             <div class='Header_Hamburger_container'>
               <input id="toggle" type="checkbox"></input>
-              <label for="toggle" class="hamburger" onclick=toggleOverflow()>
+              <label for="toggle" class="hamburger">
                   <div class="top-bun"></div>
                   <div class="meat"></div>
                   <div class="bottom-bun"></div>  
@@ -70,11 +72,13 @@
               <div  class='Header_nav_mobile'>                        
                 <div class='Header_nav_mobile_wrapper'>
                       <ul class='Header_nav_mobile_List' >
-                        <a href="#Collections" onclick=deleteBurgerMenu()><li>Collections</li></a>
-                        <a href="#Rarity" onclick=deleteBurgerMenu()><li>Rarity</li></a>
-                        <a href="#RoadMap" onclick=deleteBurgerMenu()><li>Roadmap</li></a>
-                        <a href="#Marketplaces" onclick=deleteBurgerMenu()><li>MARKETPLACES</li></a>
-                        <a href="https://lazy-soccer.gitbook.io/whitepaper/"  target="_blank" rel="noreferrer" onclick=deleteBurgerMenu()><li>Whitepaper</li></a> 
+                        <a href="#About"><li>About</li></a>
+                        <a href="#Trailer"><li>Trailer</li></a>
+                        <a href="#Collections"><li>Collections</li></a>
+                        <a href="#Rarity"><li>Rarity</li></a>
+                        <a href="#RoadMap"><li>Roadmap</li></a>
+                        <a href="#Marketplaces"><li>MARKETPLACES</li></a>
+                        <a href="https://lazy-soccer.gitbook.io/whitepaper/"  target="_blank" rel="noreferrer"><li>Whitepaper</li></a> 
                       </ul>
                       <div class="header_social_list_mobile" >
                         <a class="header_social_list_item header_social_list_item-twitter" href="https://twitter.com/Lazy_Soccer"  target="_blank" rel="noreferrer">
@@ -196,128 +200,137 @@
         </section>
 
         <!-- Game Description -->
-        <section class="collections gameDescription">
-          <div class="container gameDescription__list_container">
+        <section id="About" class="collections gameDescription">
 
-            <div class="gameDescription__item_container">
-              <img class="gameDescription_img" width="360" src="./img/gameDescription/1-1.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container">
-                <h2 class="collections_soccer_content-title">Create and manage your perfect team</h2>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Take charge of a soccer team of artistically designed sloth characters.</li>
-                  <li class="gameDescription__descr_li">Select a unique name, logo and kit design for your team.</li>
-                  <li class="gameDescription__descr_li">Players are living and growing individuals with their own traits, stats and potential.</li>
-                  <li class="gameDescription__descr_li">Grow new talented players in the sports school or purchase some on the transfer market.</li>
-                 </ul>
+          <div class="container">
+            <h2 class="title roadmap_title collections_title" >About Lazy Soccer</h2>
+
+            <div class=" gameDescription__list_container">
+
+              <div class="gameDescription__item_container">
+                <img class="gameDescription_img" width="360" src="./img/gameDescription/1-1.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container">
+                  <h2 class="collections_soccer_content-title">Manage your perfect team</h2>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Take charge of a soccer team of artistically designed sloth characters.</li>
+                    <li class="gameDescription__descr_li">Select a unique name, logo and kit design for your team.</li>
+                    <li class="gameDescription__descr_li">Players are living and growing individuals with their own traits, stats and potential.</li>
+                    <li class="gameDescription__descr_li">Grow new talented players in the sports school or purchase some on the transfer market.</li>
+                   </ul>
+                </div>
               </div>
+  
+              <div class="gameDescription__item_container">
+                <img class="gameDescription_img" width="360" src="./img/gameDescription/4-1.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container">
+                  <h3 class="collections_soccer_content-title">Develop club infrastructure</h3>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Club buildings are fundamentals of the team's economy and its evolution.</li>
+                    <li class="gameDescription__descr_li">Eight types of buildings with their unique goals and features.</li>
+                    <li class="gameDescription__descr_li">Upgrade every building to the 20th level to get the maximum effect.</li>
+                    <li class="gameDescription__descr_li">Don’t forget to consider buildings’ maintenance costs in your budget.</li>
+                    <li class="gameDescription__descr_li">Place a Lazy Soccer Staff NFT in the building to boost its performance.</li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="gameDescription__item_container">
+                <img class="gameDescription_img" width="360" src="./img/gameDescription/2-1.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container">
+                  <h3 class="collections_soccer_content-title">Play and compete with friends</h3>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Create a friendlist and compete with your friends.</li>
+                    <li class="gameDescription__descr_li">Create your own or join existing Unions to find new friends.</li>
+                    <li class="gameDescription__descr_li">Compete with other Unions.</li>
+                    <li class="gameDescription__descr_li">Get useful membership bonuses and receive even more rewards.</li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="gameDescription__item_container">
+                <img class="gameDescription_img" width="360" src="./img/gameDescription/6-1.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container">
+                  <h3 class="collections_soccer_content-title">Discover your inner tactical genius!</h3>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Well-thought-out logic behind match simulation engine.</li>
+                    <li class="gameDescription__descr_li">Watch matches live to change adjustments or view them in a replay.</li>
+                    <li class="gameDescription__descr_li">Enable the right tactics, and search for playstyles to deliver the best possible outcome.</li>
+                    <li class="gameDescription__descr_li">Send line-ups for upcoming matches and pre-define tactics.</li>
+                    <li class="gameDescription__descr_li">Win matches to receive valuable prizes.</li>
+                   </ul>
+                </div>
+              </div>
+              
+            </div>
+  
+            <div class=" gameDescription__list_container2">
+  
+              <div class="gameDescription__item_container2">
+                <img class="gameDescription_img" src="./img/gameDescription/1-2.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container2">
+                  <h2 class="collections_soccer_content-title">Manage your perfect team</h2>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Take charge of a soccer team of artistically designed sloth characters.</li>
+                    <li class="gameDescription__descr_li">Select a unique name, logo and kit design for your team.</li>
+                    <li class="gameDescription__descr_li">Players are living and growing individuals with their own traits, stats and potential.</li>
+                    <li class="gameDescription__descr_li">Grow new talented players in the sports school or purchase some on the transfer market.</li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="gameDescription__item_container2">
+                <img class="gameDescription_img" src="./img/gameDescription/4-2.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container2">
+                  <h2 class="collections_soccer_content-title">Develop club infrastructure</h2>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Club buildings are fundamentals of the team's economy and its evolution.</li>
+                    <li class="gameDescription__descr_li">Eight types of buildings with their unique goals and features.</li>
+                    <li class="gameDescription__descr_li">Upgrade every building to the 20th level to get the maximum effect.</li>
+                    <li class="gameDescription__descr_li">Don’t forget to consider buildings’ maintenance costs in your budget.</li>
+                    <li class="gameDescription__descr_li">Place a Lazy Soccer Staff NFT in the building to boost its performance.</li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="gameDescription__item_container2">
+                <img class="gameDescription_img" src="./img/gameDescription/2-2.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container2">
+                  <h2 class="collections_soccer_content-title">Play and compete with friends</h2>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Create a friendlist and compete with your friends.</li>
+                    <li class="gameDescription__descr_li">Create your own or join existing Unions to find new friends.</li>
+                    <li class="gameDescription__descr_li">Compete with other Unions.</li>
+                    <li class="gameDescription__descr_li">Get useful membership bonuses and receive even more rewards.</li>
+                   </ul>
+                </div>
+              </div>
+  
+              <div class="gameDescription__item_container2">
+                <img class="gameDescription_img" src="./img/gameDescription/6-2.png" alt="mobile screen shot">
+                <div class="gameDescription__descr_container2">
+                  <h2 class="collections_soccer_content-title">Discover your inner tactical genius!</h2>
+                   <ul class="collections_alpha_content-list gameDescription__descr_list">
+                    <li class="gameDescription__descr_li">Well-thought-out logic behind match simulation engine.</li>
+                    <li class="gameDescription__descr_li">Watch matches live to change adjustments or view them in a replay.</li>
+                    <li class="gameDescription__descr_li">Enable the right tactics, and search for playstyles to deliver the best possible outcome.</li>
+                    <li class="gameDescription__descr_li">Send line-ups for upcoming matches and pre-define tactics.</li>
+                    <li class="gameDescription__descr_li">Win matches to receive valuable prizes.</li>
+                   </ul>
+                </div>
+              </div>
+  
             </div>
 
-            <div class="gameDescription__item_container">
-              <img class="gameDescription_img" width="360" src="./img/gameDescription/4-1.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container">
-                <h3 class="collections_soccer_content-title">Develop club infrastructure</h3>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Club buildings are fundamentals of the team's economy and its evolution.</li>
-                  <li class="gameDescription__descr_li">Eight types of buildings with their unique goals and features.</li>
-                  <li class="gameDescription__descr_li">Upgrade every building to the 20th level to get the maximum effect.</li>
-                  <li class="gameDescription__descr_li">Don’t forget to consider buildings’ maintenance costs in your budget.</li>
-                  <li class="gameDescription__descr_li">Place a Lazy Soccer Staff NFT in the building to boost its performance.</li>
-                 </ul>
-              </div>
-            </div>
-
-            <div class="gameDescription__item_container">
-              <img class="gameDescription_img" width="360" src="./img/gameDescription/2-1.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container">
-                <h3 class="collections_soccer_content-title">Play and compete with friends</h3>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Create a friendlist and compete with your friends.</li>
-                  <li class="gameDescription__descr_li">Create your own or join existing Unions to find new friends.</li>
-                  <li class="gameDescription__descr_li">Compete with other Unions.</li>
-                  <li class="gameDescription__descr_li">Get useful membership bonuses and receive even more rewards.</li>
-                 </ul>
-              </div>
-            </div>
-
-            <div class="gameDescription__item_container">
-              <img class="gameDescription_img" width="360" src="./img/gameDescription/6-1.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container">
-                <h3 class="collections_soccer_content-title">Discover your inner tactical genius!</h3>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Well-thought-out logic behind match simulation engine.</li>
-                  <li class="gameDescription__descr_li">Watch matches live to change adjustments or view them in a replay.</li>
-                  <li class="gameDescription__descr_li">Enable the right tactics, and search for playstyles to deliver the best possible outcome.</li>
-                  <li class="gameDescription__descr_li">Send line-ups for upcoming matches and pre-define tactics.</li>
-                  <li class="gameDescription__descr_li">Win matches to receive valuable prizes.</li>
-                 </ul>
-              </div>
-            </div>
-            
           </div>
 
-          <div class="container gameDescription__list_container2">
 
-            <div class="gameDescription__item_container2">
-              <img class="gameDescription_img" src="./img/gameDescription/1-2.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container2">
-                <h2 class="collections_soccer_content-title">Create and manage your perfect team</h2>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Take charge of a soccer team of artistically designed sloth characters.</li>
-                  <li class="gameDescription__descr_li">Select a unique name, logo and kit design for your team.</li>
-                  <li class="gameDescription__descr_li">Players are living and growing individuals with their own traits, stats and potential.</li>
-                  <li class="gameDescription__descr_li">Grow new talented players in the sports school or purchase some on the transfer market.</li>
-                 </ul>
-              </div>
-            </div>
 
-            <div class="gameDescription__item_container2">
-              <img class="gameDescription_img" src="./img/gameDescription/4-2.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container2">
-                <h2 class="collections_soccer_content-title">Develop club infrastructure</h2>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Club buildings are fundamentals of the team's economy and its evolution.</li>
-                  <li class="gameDescription__descr_li">Eight types of buildings with their unique goals and features.</li>
-                  <li class="gameDescription__descr_li">Upgrade every building to the 20th level to get the maximum effect.</li>
-                  <li class="gameDescription__descr_li">Don’t forget to consider buildings’ maintenance costs in your budget.</li>
-                  <li class="gameDescription__descr_li">Place a Lazy Soccer Staff NFT in the building to boost its performance.</li>
-                 </ul>
-              </div>
-            </div>
-
-            <div class="gameDescription__item_container2">
-              <img class="gameDescription_img" src="./img/gameDescription/2-2.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container2">
-                <h2 class="collections_soccer_content-title">Play and compete with friends</h2>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Create a friendlist and compete with your friends.</li>
-                  <li class="gameDescription__descr_li">Create your own or join existing Unions to find new friends.</li>
-                  <li class="gameDescription__descr_li">Compete with other Unions.</li>
-                  <li class="gameDescription__descr_li">Get useful membership bonuses and receive even more rewards.</li>
-                 </ul>
-              </div>
-            </div>
-
-            <div class="gameDescription__item_container2">
-              <img class="gameDescription_img" src="./img/gameDescription/6-2.png" alt="mobile screen shot">
-              <div class="gameDescription__descr_container2">
-                <h2 class="collections_soccer_content-title">Discover your inner tactical genius!</h2>
-                 <ul class="collections_alpha_content-list gameDescription__descr_list">
-                  <li class="gameDescription__descr_li">Well-thought-out logic behind match simulation engine.</li>
-                  <li class="gameDescription__descr_li">Watch matches live to change adjustments or view them in a replay.</li>
-                  <li class="gameDescription__descr_li">Enable the right tactics, and search for playstyles to deliver the best possible outcome.</li>
-                  <li class="gameDescription__descr_li">Send line-ups for upcoming matches and pre-define tactics.</li>
-                  <li class="gameDescription__descr_li">Win matches to receive valuable prizes.</li>
-                 </ul>
-              </div>
-            </div>
-
-          </div>
 
         </section>
 
         <!-- video section -->
-        <section class="roadmap video">
-          <div class="container rarity_container" >
+        <section id="Trailer" class="roadmap video">
+          <div class="container rarity_container video_container" >
             <h2 class="title roadmap_title" >trailer</h2>
             <div class="video__iframe_wrap">
               <iframe
@@ -807,6 +820,21 @@
             // Выводим цену NFT в SOL и USD
             floorContainer.innerHTML = `$${floorInUsd}`;
         }
+
+        document.addEventListener('DOMContentLoaded', function() {
+          // Назначаем функцию deleteBurgerMenu всем ссылкам в навигационном меню
+          var links = document.querySelectorAll('.Header_nav_mobile_List a');
+          links.forEach(function(link) {
+              link.addEventListener('click', deleteBurgerMenu);
+          });
+      });
+      
+      function deleteBurgerMenu() {
+          var checkbox = document.getElementById("toggle");
+          if (checkbox.checked) {
+              checkbox.checked = false;
+          }
+      }
         
         
           window.onload = () => {
@@ -815,7 +843,7 @@
             getMagicEdenPrice()
           };
     </script>
-    <script type="module" src="./js/index3.js?ver=11" defer></script>
+    <script type="module" src="./js/index3.js?ver=12" defer></script>
     <!-- js code -->
 
 </body>
