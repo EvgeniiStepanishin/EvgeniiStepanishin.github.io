@@ -35,7 +35,7 @@
   }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1100px) {
   .video_bg {
     bottom: -60px !important;
   }

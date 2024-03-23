@@ -421,7 +421,7 @@ var jsonData = [
   {
     index: 25,
     title: "Open Beta & Game Release Preparations",
-    date: "Q4 2023",
+    date: "Q1 2024",
     imageSrc: "./img/roadmap/i.svg",
     description:
       "Transition to open beta testing and preparation for iOS / Android game release.",
@@ -434,8 +434,8 @@ var jsonData = [
     date: "Q3 2023",
     imageSrc: "./img/roadmap/i.svg",
     description: "Launch of closed beta testing among community members.",
-    future: true,
-    current: false,
+    future: false,
+    current: true,
   },
   {
     index: 23,
@@ -445,12 +445,12 @@ var jsonData = [
     description:
       "Preparation for closed beta testing of the Android and iOS versions of the game.",
     future: false,
-    current: true,
+    current: false,
   },
   {
     index: 26,
     title: "Lazy Soccer WebGL Release",
-    date: "Q4 2023",
+    date: "Q1 2024",
     imageSrc: "./img/roadmap/i.svg",
     description: "WebGL version development completion and its release.",
     future: true,
@@ -790,7 +790,7 @@ var jsonDataMobile = [
     description:
       "Preparation for closed beta testing of the Android and iOS versions of the game.",
     future: false,
-    current: true,
+    current: false,
   },
   {
     index: 24,
@@ -798,13 +798,13 @@ var jsonDataMobile = [
     date: "Q3 2023",
     imageSrc: "./img/roadmap/i.svg",
     description: "Launch of closed beta testing among community members.",
-    future: true,
-    current: false,
+    future: false,
+    current: true,
   },
   {
     index: 25,
     title: "Open Beta & Game Release Preparations",
-    date: "Q4 2023",
+    date: "Q1 2024",
     imageSrc: "./img/roadmap/i.svg",
     description:
       "Transition to open beta testing and preparation for iOS / Android game release.",
@@ -814,7 +814,7 @@ var jsonDataMobile = [
   {
     index: 26,
     title: "Lazy Soccer WebGL Release",
-    date: "Q4 2023",
+    date: "Q1 2024",
     imageSrc: "./img/roadmap/i.svg",
     description: "WebGL version development completion and its release.",
     future: true,

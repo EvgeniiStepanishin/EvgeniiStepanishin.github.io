@@ -303,9 +303,9 @@
     }
 }
 
-@media screen and (max-width: 999px) {
+@media screen and (max-width: 1100px) {
     .collections {
-        margin-top: 503px;
+        margin-top: 203px;
     }
     .collections_alpha_img {
         width: 273px;
@@ -379,7 +379,7 @@
 
 @media screen and (max-width: 767px) {
     .collections {
-        margin-top: 938px;
+        margin-top: 238px;
     }
     .collections_alpha_img {
         width: 264px;
@@ -462,7 +462,7 @@
 
 @media screen and (max-width: 479px) {
     .collections {
-        margin-top: 882px;
+        margin-top: 202px;
     }
     .collections_alpha_content-list {
         gap: 24px;
@@ -495,7 +495,7 @@
 
 @media screen and (max-width: 319px) {
     .collections {
-        margin-top: 270vw;
+        margin-top: 200px;
     }
     .collections_alpha_img {
         width: 82vw;
