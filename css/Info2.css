@@ -118,7 +118,7 @@
 }
 
 .info_description_btn {
-  margin-top: 17px;
+  margin-top: 0px;
   background: #ffc700;
   border-radius: 4px;
   padding: 8.36px 17.7px;
@@ -131,7 +131,7 @@
   width: 181px;
   height: 40px;
   position: relative;
-  top: 13px;
+  top: 0px;
 }
 
 .info_description_btn:hover {
@@ -474,7 +474,7 @@
     line-height: 130%;
   }
   .info_description_btn {
-    margin-top: 12px;
+    margin-top: 0px;
     padding: 7.36px 17px;
     width: 171px;
   }
@@ -647,7 +647,7 @@
   .info_description_btn {
     width: 164px;
     height: 40px;
-    top: 35px;
+    top: 15px;
   }
   .info_stats {
     margin-top: 240px;
@@ -710,7 +710,7 @@
     line-height: 130%;
   }
   .info_description_btn {
-    top: 30px;
+    top: 15px;
     font-size: 15.1976px;
     line-height: 22px;
   }
@@ -776,7 +776,7 @@
   .info_description_btn {
     width: 57vw;
     height: 12.5vw;
-    top: 10vw;
+    top: 5vw;
     left: 3vw;
     font-size: 4.5vw;
     line-height: 6vw;
