@@ -431,12 +431,12 @@ var jsonData = [
   },
   {
     index: 25,
-    title: "Open Beta & Game Release Preparations",
-    date: "Q1 2024",
+    title: "OG Badges Mint",
+    date: "April 2024",
     imageSrc: "./img/roadmap/i.svg",
     description:
-      "Transition to open beta testing and preparation for iOS / Android game release.",
-    future: true,
+      false,
+    future: false,
     current: false,
   },
   {
@@ -446,7 +446,7 @@ var jsonData = [
     imageSrc: "./img/roadmap/i.svg",
     description: "Launch of closed beta testing among community members.",
     future: false,
-    current: true,
+    current: false,
   },
   {
     index: 23,
@@ -460,20 +460,40 @@ var jsonData = [
   },
   {
     index: 26,
-    title: "Lazy Soccer WebGL Release",
-    date: "Q1 2024",
+    title: "Open Beta Test Release",
+    date: "April 2024",
     imageSrc: "./img/roadmap/i.svg",
-    description: "WebGL version development completion and its release.",
+    description:
+      "Transition to open beta testing and preparation for iOS / Android game release.",
+    future: false,
+    current: true,
+  },
+  {
+    index: 27,
+    title: "OBT Tournament with a Prize Pool",
+    date: "May 2024",
+    imageSrc: "./img/roadmap/i.svg",
+    description:
+      false,
     future: true,
     current: false,
   },
   {
     index: 27,
-    title: "Tournaments Launch",
-    date: "2024",
+    title: "Content Makers Contest",
+    date: "April - May 2024",
     imageSrc: "./img/roadmap/i.svg",
     description:
-      "Run a tournament between game communities and content creators.",
+      false,
+    future: true,
+    current: false,
+  },
+  {
+    index: 27,
+    title: "Lazy Soccer WebGL Release",
+    date: "2024",
+    imageSrc: "./img/roadmap/i.svg",
+    description: "WebGL version development completion and its release.",
     future: true,
     current: false,
   },
@@ -538,7 +558,7 @@ jsonData.forEach(function (item) {
   var contentWrapper = document.createElement("div");
   contentWrapper.className = "roadmap_content_wrapper";
 
-  // Создайте элементы для заголовка, даты, изображения и описания
+  // Создайте элементы для заголовка и даты
   var titleElement = document.createElement("p");
   if (item.future) {
     titleElement.className = "roadap_content_title roadap_content_title_future";
@@ -554,24 +574,30 @@ jsonData.forEach(function (item) {
   dateElement.className = "roadap_content_data";
   dateElement.textContent = item.date;
 
-  var imageElement = document.createElement("img");
-  imageElement.className = "roadmap_content_i";
-  imageElement.src = item.imageSrc;
-  imageElement.alt = "";
-
-  var descriptionElement = document.createElement("div");
-  descriptionElement.className = "roadmap_content_i_description";
-  descriptionElement.textContent = item.description;
-
   // Добавьте элементы к .roadmap_content_wrapper
   contentWrapper.appendChild(titleElement);
   contentWrapper.appendChild(dateElement);
-  contentWrapper.appendChild(imageElement);
-  contentWrapper.appendChild(descriptionElement);
+
+  // Проверьте наличие описания, прежде чем создавать элементы изображения и описания
+  if (item.description) {
+    var imageElement = document.createElement("img");
+    imageElement.className = "roadmap_content_i";
+    imageElement.src = item.imageSrc;
+    imageElement.alt = "";
+
+    var descriptionElement = document.createElement("div");
+    descriptionElement.className = "roadmap_content_i_description";
+    descriptionElement.textContent = item.description;
+
+    // Добавьте элементы изображения и описания к .roadmap_content_wrapper
+    contentWrapper.appendChild(imageElement);
+    contentWrapper.appendChild(descriptionElement);
+  }
 
   // Добавьте .roadmap_content_wrapper к .new-wrapper
   container.appendChild(contentWrapper);
 });
+
 
 // Mobile roadmap
 var jsonDataMobile = [
@@ -810,34 +836,54 @@ var jsonDataMobile = [
     imageSrc: "./img/roadmap/i.svg",
     description: "Launch of closed beta testing among community members.",
     future: false,
-    current: true,
+    current: false,
   },
   {
     index: 25,
-    title: "Open Beta & Game Release Preparations",
-    date: "Q1 2024",
+    title: "OG Badges Mint",
+    date: "April 2024",
+    imageSrc: "./img/roadmap/i.svg",
+    description:
+      false,
+    future: false,
+    current: false,
+  },
+  {
+    index: 25,
+    title: "Open Beta Test Release",
+    date: "April 2024",
     imageSrc: "./img/roadmap/i.svg",
     description:
       "Transition to open beta testing and preparation for iOS / Android game release.",
+    future: false,
+    current: true,
+  },
+  {
+    index: 27,
+    title: "OBT Tournament with a Prize Pool",
+    date: "May 2024",
+    imageSrc: "./img/roadmap/i.svg",
+    description:
+      false,
+    future: true,
+    current: false,
+  },
+  {
+    index: 27,
+    title: "Content Makers Contest",
+    date: "April - May 2024",
+    imageSrc: "./img/roadmap/i.svg",
+    description:
+      false,
     future: true,
     current: false,
   },
   {
     index: 26,
     title: "Lazy Soccer WebGL Release",
-    date: "Q1 2024",
-    imageSrc: "./img/roadmap/i.svg",
-    description: "WebGL version development completion and its release.",
-    future: true,
-    current: false,
-  },
-  {
-    index: 27,
-    title: "Tournaments Launch",
     date: "2024",
     imageSrc: "./img/roadmap/i.svg",
-    description:
-      "Run a tournament between game communities and content creators.",
+    description: "WebGL version development completion and its release.",
     future: true,
     current: false,
   },
@@ -902,7 +948,7 @@ jsonDataMobile.forEach(function (item) {
   var contentWrapper = document.createElement("div");
   contentWrapper.className = "roadmap_mobile_content_container";
 
-  // Создайте элементы для заголовка, даты, изображения и описания
+  // Создайте элементы для заголовка и даты
   var titleElement = document.createElement("p");
   if (item.future) {
     titleElement.className =
@@ -919,21 +965,36 @@ jsonDataMobile.forEach(function (item) {
   dateElement.className = "roadmap_mobile_content_data";
   dateElement.textContent = item.date;
 
-  // var imageElement = document.createElement("img");
-  // imageElement.className = "roadmap_content_i";
-  // imageElement.src = item.imageSrc;
-  // imageElement.alt = "";
-
-  var descriptionElement = document.createElement("div");
-  descriptionElement.className = "roadmap_mobile_content_description";
-  descriptionElement.textContent = item.description;
-
-  // Добавьте элементы к .roadmap_content_wrapper
+  // Добавьте элементы заголовка и даты к .roadmap_content_wrapper
   contentWrapper.appendChild(titleElement);
   contentWrapper.appendChild(dateElement);
-  // contentWrapper.appendChild(imageElement);
-  contentWrapper.appendChild(descriptionElement);
 
-  // Добавьте .roadmap_content_wrapper к .new-wrapper
+  // Проверьте наличие описания, прежде чем создавать элемент описания
+  if (item.description) {
+    var descriptionElement = document.createElement("div");
+    descriptionElement.className = "roadmap_mobile_content_description";
+    descriptionElement.textContent = item.description;
+
+    // Добавьте элемент описания к .roadmap_content_wrapper
+    contentWrapper.appendChild(descriptionElement);
+  }
+
+  // Добавьте .roadmap_content_wrapper к .roadmap_mobile_wrapper
   mobileContainer.appendChild(contentWrapper);
+
+  // Проверьте наличие элемента с current: true
+  if (item.current) {
+    contentWrapper.classList.add('current-item');
+  }
 });
+
+// Прокрутите до элемента с current: true внутри контейнера
+var currentItem = document.querySelector('.roadmap_mobile_wrapper .current-item');
+if (currentItem) {
+  var container = document.querySelector('.roadmap_content_container_mobile');
+  container.scrollTo({
+    left: currentItem.offsetLeft - container.offsetLeft - 100,
+    behavior: 'smooth'
+  });
+}
+

@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    logging:
+      driver: gelf
+      options:
+        gelf-address: udp://127.0.0.1:12201
+    ports:
+      - ${APP_PORT:-8080}:80
+
+networks:
+  default:
+    name: lazy-soccer-local
+    external: true

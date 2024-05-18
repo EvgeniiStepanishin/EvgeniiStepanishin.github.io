@@ -362,6 +362,7 @@
 
 .roadmap_content_container_mobile {
   display: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 /*Убрать полосу прокрутки для всей страницы*/
@@ -785,6 +786,7 @@
     display: none;
   }
   .roadmap_content_container_mobile {
+    -webkit-overflow-scrolling: touch;
     display: block;
     width: 100vw;
     height: 570px;
@@ -911,9 +913,10 @@
     width: 100vw;
     height: 570px;
     overflow-x: auto;
-    overflow-y: clip;
+    overflow-y: auto;
     position: relative;
     /* left: 66px; */
     top: 100px;
+    -webkit-overflow-scrolling: touch;
   }
 }

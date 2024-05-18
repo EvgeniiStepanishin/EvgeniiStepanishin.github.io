@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  app:
+    image: $CI_REGISTRY_IMAGE
+    deploy:
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+      placement:
+        constraints:
+          - node.labels.frontend==true
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.${TRAEFIK_NAME}.rule=Host(`$TRAEFIK_HOST`,`$TRAEFIK_HOST_APP`)"
+        - "traefik.http.services.${TRAEFIK_NAME}.loadbalancer.server.port=80"
+
+networks:
+  default:
+    name: $NETWORKS_NAME
+    external: true
