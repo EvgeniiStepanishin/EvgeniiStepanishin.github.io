@@ -912,8 +912,8 @@
     display: block;
     width: 100vw;
     height: 570px;
-    overflow-x: auto;
-    overflow-y: auto;
+    overflow-x: scroll;
+    overflow-y: scroll;
     position: relative;
     /* left: 66px; */
     top: 100px;
