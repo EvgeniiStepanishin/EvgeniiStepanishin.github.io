@@ -1040,3 +1040,11 @@ function enableSmoothScrolling() {
 setTimeout(enableSmoothScrolling, 500);
 
 
+document.addEventListener('DOMContentLoaded', function() {
+  var myScroll = new IScroll('.roadmap_content_container_mobile', {
+      scrollX: true,
+      scrollY: false,
+      mouseWheel: true,
+      click: true
+  });
+});
