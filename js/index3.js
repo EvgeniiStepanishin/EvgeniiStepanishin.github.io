@@ -1040,11 +1040,27 @@ function enableSmoothScrolling() {
 setTimeout(enableSmoothScrolling, 500);
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  var myScroll = new IScroll('.roadmap_content_container_mobile', {
-      scrollX: true,
-      scrollY: false,
-      mouseWheel: true,
-      click: true
-  });
-});
+// document.addEventListener('DOMContentLoaded', function() {
+//   var myScroll = new IScroll('.roadmap_content_container_mobile', {
+//       scrollX: true,
+//       scrollY: false,
+//       mouseWheel: true,
+//       click: true
+//   });
+
+
+// });
+
+// function loaded() {
+//   console.log('loaded1');
+//   var myDiv = document.querySelector('.roadmap_content_container_mobile');
+//   console.log(myDiv)
+
+//   myScroll = new IScroll('#roadmap_content_container_mobile');
+
+//   console.log('loaded2');
+//   console.log(myScroll)
+
+// }
+
+// setTimeout(loaded, 500);

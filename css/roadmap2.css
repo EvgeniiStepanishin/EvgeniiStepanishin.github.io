@@ -923,6 +923,6 @@
     /* left: 66px; */
     top: 100px;
     will-change: transform;
-    transform: translateZ(0);
+    -webkit-transform:translate3d(0,0,0)
   }
 }

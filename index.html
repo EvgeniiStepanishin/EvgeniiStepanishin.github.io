@@ -45,14 +45,11 @@
 
         function loaded() {
 
-            myScroll = new IScroll('.roadmap_content_container_mobile', {
-              scrollX: true,
-              scrollY: false,
-              mouseWheel: true,
-              click: true
-          });
+            myScroll = new IScroll('#roadmap_content_container_mobile');
 
         }
+        console.log('loaded');
+        console.log(myScroll)
 
     </script>
 
@@ -568,7 +565,7 @@
                 </div>
               </div>
             </div>
-            <div class="roadmap_content_container_mobile">
+            <div id="roadmap_content_container_mobile" class="roadmap_content_container_mobile">
               <img class="roadmap_content_img_mobile" src="./img/roadmap/road30Mobile.svg" alt="">
               <div class="roadmap_mobile_wrapper">
 
@@ -922,6 +919,7 @@
     </script>
     <script type="module" src="./js/index3.js?ver=14" defer></script>
     <!-- js code -->
+
 
 </body>
 </html>
