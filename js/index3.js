@@ -1025,3 +1025,18 @@ if (currentItem) {
   });
 }
 
+// Получаем элемент, который содержит прокручиваемую область
+var myDiv = document.querySelector('.roadmap_content_container_mobile');
+
+// Устанавливаем временное значение 'auto' для -webkit-overflow-scrolling
+myDiv.style.webkitOverflowScrolling = 'auto';
+
+// Функция для переключения обратно на 'touch'
+function enableSmoothScrolling() {
+    myDiv.style.webkitOverflowScrolling = 'touch';
+}
+
+// Устанавливаем таймаут для вызова функции через 500 миллисекунд
+setTimeout(enableSmoothScrolling, 1000);
+
+

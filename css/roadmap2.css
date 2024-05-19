@@ -913,7 +913,7 @@
   }
   .roadmap_content_container_mobile {
     display: block;
-    width: 100vw;
+    /* width: 100vw; */
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     height:100%;
