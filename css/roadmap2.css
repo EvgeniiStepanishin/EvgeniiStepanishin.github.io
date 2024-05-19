@@ -908,15 +908,20 @@
     padding-right: 200px;
     position: relative;
   }
+  .roadmap_container {
+    height: 570px;
+  }
   .roadmap_content_container_mobile {
     display: block;
     width: 100vw;
-    height: 570px;
-    overflow-x: scroll;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    height:100%;
+    overflow-x: scroll;
+    
     position: relative;
     /* left: 66px; */
     top: 100px;
-    -webkit-overflow-scrolling: touch;
+    
   }
 }
