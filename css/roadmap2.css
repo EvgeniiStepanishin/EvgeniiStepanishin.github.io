@@ -908,9 +908,9 @@
     padding-right: 200px;
     position: relative;
   }
-  .roadmap_container {
+  /* .roadmap_container {
     height: 570px;
-  }
+  } */
   .roadmap_content_container_mobile {
     display: block;
     width: 100vw;
