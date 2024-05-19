@@ -922,6 +922,7 @@
     position: relative;
     /* left: 66px; */
     top: 100px;
-    
+    will-change: transform;
+    transform: translateZ(0);
   }
 }

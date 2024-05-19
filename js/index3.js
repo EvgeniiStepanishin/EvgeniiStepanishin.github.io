@@ -1037,6 +1037,6 @@ function enableSmoothScrolling() {
 }
 
 // Устанавливаем таймаут для вызова функции через 500 миллисекунд
-setTimeout(enableSmoothScrolling, 1000);
+setTimeout(enableSmoothScrolling, 500);
 
 
